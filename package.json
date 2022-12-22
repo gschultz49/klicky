@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "check": "node setup.js",
     "start": "parcel index.html --open",
     "start-test": "parcel test.html --open",
     "build": "parcel build index.html"
