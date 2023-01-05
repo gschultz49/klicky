@@ -1,4 +1,5 @@
-# Klicky
+# Klicky by Greg
+
 
 Welcome to Klicky! The simple click tracking library anybody can use!
 
