@@ -1,3 +1,7 @@
 export const Klicky = () => {
-  console.log("klickly ran!");
+  console.log("klicky ran!");
 };
+
+document.addEventListener("click", function(evt) {
+  console.log("clicked");
+});

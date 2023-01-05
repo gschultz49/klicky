@@ -4,3 +4,21 @@ span {
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
+
+* {
+  text-align: center;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: green;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
