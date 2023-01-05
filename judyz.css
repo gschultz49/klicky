@@ -1,0 +1,12 @@
+h2{
+    color:blue;
+    text-align: center;
+  }
+  p{
+    z-index: 2;
+    color:green;
+    text-align: center;
+  }
+  .logo{
+    text-align: center;
+  };
