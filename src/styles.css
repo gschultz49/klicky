@@ -4,3 +4,38 @@ span {
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
+
+p {
+  color: purple;
+  font-size: 25px;
+  font-family: Arial;
+  text-shadow: 2px 2px 3px red;
+}
+
+.outer
+{
+  padding: 1px;
+  margin: 1px;
+  text-decoration: none;
+}
+
+h1
+{
+  text-align: center;
+  color: blue;
+}
+
+h2
+{
+  text-align: center;
+  padding: 1px;
+  color: green;
+  font-size: 14px;
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

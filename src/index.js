@@ -1,3 +1,3 @@
-import { Klicky } from "./klicky";
+import { click, Klicky } from "./klicky";
 
 Klicky();
