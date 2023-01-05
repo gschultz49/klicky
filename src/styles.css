@@ -4,3 +4,7 @@ span {
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
+
+p {
+  color: blue;
+}
