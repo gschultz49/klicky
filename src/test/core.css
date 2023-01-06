@@ -359,24 +359,35 @@ body {
 }
 
 .ad{
-  text-align: left;
+  position:sticky;
+  height: fit-content;
   padding: 10px;
   border: 1px solid lightgray;
   background-color: white;
   border-radius: 10px;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ad > p{
-  color: rgb(53, 141, 255);
+  color:#0177b7;
 }
 
 .ad > p:hover{
   cursor: pointer;
-  color:skyblue;
+  color:blue;
 }
 
 .ad:hover{
   background-color: whitesmoke;
   cursor: pointer;
+}
+
+.newads{
+  position: sticky;
+  top: 80px;
+  border-radius: 10px;
+  height: fit-content;
 }
