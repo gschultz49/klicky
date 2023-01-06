@@ -249,12 +249,13 @@ body {
 }
 
 .inputOption:hover {
+  color:black;
   background-color: whitesmoke;
   border-radius: 10px;
 }
 
 .inputOption > h4 {
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 /* Post */
@@ -287,7 +288,7 @@ body {
 .widgets {
   position: sticky;
   top: 80px;
-  flex: 0.2;
+  flex: 0.5;
   background-color: white;
   border-radius: 10px;
   border: 1px solid lightgray;
@@ -304,10 +305,11 @@ body {
 
 .widgets__header > h2 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .widgets__article {
+  color: gray;
   display: flex;
   padding: 10px;
   cursor: pointer;
@@ -337,4 +339,17 @@ body {
 .widgets__articleRight > p {
   font-size: 12px;
   color: gray;
+}
+
+.more{
+  display: flex;
+  padding-left:30px;
+  color:gray;
+  cursor: pointer;
+}
+
+.more p:hover{
+  background-color: whitesmoke;
+  border-radius: 50px;
+  cursor: pointer;
 }
