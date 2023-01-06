@@ -271,6 +271,10 @@ body {
   margin-bottom: 10px;
 }
 
+.post__body > p{
+  padding-bottom:10px;
+}
+
 .post__info {
   margin-left: 10px;
 }
@@ -288,7 +292,7 @@ body {
 .widgets {
   position: sticky;
   top: 80px;
-  flex: 0.5;
+  flex-wrap: 0.3;
   background-color: white;
   border-radius: 10px;
   border: 1px solid lightgray;
@@ -351,5 +355,28 @@ body {
 .more p:hover{
   background-color: whitesmoke;
   border-radius: 50px;
+  cursor: pointer;
+}
+
+.ad{
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.ad > p{
+  color: rgb(53, 141, 255);
+}
+
+.ad > p:hover{
+  cursor: pointer;
+  color:skyblue;
+}
+
+.ad:hover{
+  background-color: whitesmoke;
   cursor: pointer;
 }
