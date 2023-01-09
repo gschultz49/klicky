@@ -23,7 +23,7 @@ function onceHandler(event)
   console.log("You have clicked the page");
   write();
   var date = new Date();
-  dateTest(date);
+  dateTime(date);
 }
 
 function write()
@@ -33,7 +33,7 @@ function write()
   document.body.appendChild(para);
 }
 
-function dateTest(date:Date):void
+function dateTime(date:Date):void
 {
   var month = date.getMonth()+1;
   var day = date.getDate();
