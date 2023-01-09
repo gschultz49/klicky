@@ -35,8 +35,13 @@ function write()
 
 function dateTest(date:Date):void
 {
+  var month = date.getMonth();
+  var day = date.getDay();
+  var year = date.getFullYear();
+
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-  console.log("Click event occurred at: "+hours+":"+minutes+":"+seconds); 
+
+  console.log("Click event occurred at: "+month+"/"+day+"/"+year+" "+hours+":"+minutes+":"+seconds); 
 }
