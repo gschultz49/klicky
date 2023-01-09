@@ -290,7 +290,7 @@ body {
 
 /* widgets */
 .widgets {
-  position: sticky;
+  /* position: sticky; */
   top: 80px;
   flex-wrap: 0.3;
   background-color: white;
@@ -359,7 +359,6 @@ body {
 }
 
 .ad{
-  position:sticky;
   height: fit-content;
   padding: 10px;
   border: 1px solid lightgray;
@@ -386,8 +385,12 @@ body {
 }
 
 .newads{
-  position: sticky;
+  /* position: sticky; */
   top: 80px;
   border-radius: 10px;
   height: fit-content;
+}
+
+.addown{
+  position:sticky;
 }
