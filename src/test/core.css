@@ -365,16 +365,21 @@ body {
   background-color: white;
   border-radius: 10px;
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.ad > p{
+.row{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.tags{
+  margin: 0rem -5.5rem;
+  font-size: small;
   color:#0177b7;
 }
 
-.ad > p:hover{
+.tags > p:hover{
+  text-decoration: underline;
   cursor: pointer;
   color:blue;
 }
@@ -384,13 +389,29 @@ body {
   cursor: pointer;
 }
 
-.newads{
-  /* position: sticky; */
+.addown{
+  position: sticky;
   top: 80px;
-  border-radius: 10px;
-  height: fit-content;
 }
 
-.addown{
-  position:sticky;
+.about{
+  color:gray;
+  font-size: small;
+  padding-top:10px;
+}
+
+.rows{
+  display:flex;
+  justify-content: space-evenly;
+  padding:2px;
+}
+
+.cols{
+  margin: 0.2rem -2.5rem;
+}
+
+.cols > p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color:blue;
 }
