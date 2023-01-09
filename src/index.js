@@ -1,3 +1,3 @@
 import { Klicky } from "./klicky";
 
-Klicky();
+Klicky('h1');
