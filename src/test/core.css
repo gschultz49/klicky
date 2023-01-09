@@ -11,6 +11,7 @@ body {
 }
 
 .header__left img {
+  cursor: pointer;
   object-fit: contain;
   height: 40px;
   margin-right: 10px;
@@ -332,6 +333,10 @@ body {
   font-size: 15px;
 }
 
+.material-icons:hover {
+  cursor:pointer;
+}
+
 .widgets__articleRight {
   flex: 1;
 }
@@ -411,7 +416,17 @@ body {
 }
 
 .cols > p:hover{
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
-  color:blue;
+  border-radius: 50px;
+  background-color: rgb(230,230,230);
 }
+
+/* .help{
+  position: relative
+}
+.help >img{
+  position: fixed;
+  top:570px;
+  right:10px;
+} */
