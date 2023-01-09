@@ -35,8 +35,8 @@ function write()
 
 function dateTest(date:Date):void
 {
-  var month = date.getMonth();
-  var day = date.getDay();
+  var month = date.getMonth()+1;
+  var day = date.getDate();
   var year = date.getFullYear();
 
   var hours = date.getHours();
