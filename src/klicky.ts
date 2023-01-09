@@ -33,6 +33,10 @@ function write()
   document.body.appendChild(para);
 
   var dt = new Date();
+  const datetime = document.createElement("p");
+  datetime.innerHTML = dt;
+  document.body.appendChild(datetime);
+
   document.getElementById('date-time').innerHTML = dt;
 }
 
