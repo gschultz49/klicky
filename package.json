@@ -2,12 +2,12 @@
   "name": "klicky",
   "version": "1.0.0",
   "description": "",
-  "main": "tiffanieku.html",
+  "main": "test.html",
   "scripts": {
     "check": "node setup.js",
-    "start": "parcel tiffanieku.html --open",
+    "start": "parcel test.html --open",
     "start-test": "parcel test.html --open",
-    "build": "parcel build tiffanieku.html"
+    "build": "parcel build test.html"
   },
   "dependencies": {
     "parcel-bundler": "^1.6.1"
