@@ -341,30 +341,33 @@ body {
 
 /* Event Viewer */
 .event_viewer {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
   margin-left: 10px;
-  width: 220px;
 }
 
 /* Button */
 #event_button {
   color: black;
-  border-style: solid;
-  border-color: lightgrey;
-  border-width: 1px;
-  border-radius: 10px;
-  background-color: white;
   padding: 10px;
   margin-top: 0px;
+  width: 200px;
 }
 
 #event_button:hover {
   background-color: whitesmoke;
 }
 
-#event_view_text {
+.event_view_text {
   margin-left: 10px;
 }
 
+/* Checkbox that triggers toggle */
 .hidden, #toggle {
   display: none;
 }
@@ -375,10 +378,7 @@ body {
 
 #event_data {
   font-size: 14px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: lightgrey;
-  border-width: 1px;
-  background-color: white;
   padding: 10px;
+  text-align: center; 
 }
+
