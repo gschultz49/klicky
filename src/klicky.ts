@@ -22,6 +22,8 @@ function onceHandler(event)
 {
   console.log("You have clicked the page");
   write();
+  var date = new Date();
+  dateTest(date);
 }
 
 function write()
@@ -29,4 +31,12 @@ function write()
   const para = document.createElement("p");
   para.innerText = "You have clicked the page!";
   document.body.appendChild(para);
+}
+
+function dateTest(date:Date):void
+{
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+  console.log("Click event occurred at: "+hours+":"+minutes+":"+seconds); 
 }
