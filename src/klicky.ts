@@ -4,8 +4,8 @@ export const Klicky = (selector: string) => {
     // selector mode
     if (selector) {
 
-      console.log("SELECTOR MODE");
       if (selector === evt.target.localName) {
+        console.log("SELECTOR MODE");
         console.log(selector + " tag clicked", evt);
       } 
 
