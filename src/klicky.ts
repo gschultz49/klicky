@@ -31,6 +31,9 @@ function write()
   const para = document.createElement("p");
   para.innerText = "You have clicked the page!";
   document.body.appendChild(para);
+
+  var dt = new Date();
+  document.getElementById('date-time').innerHTML = dt;
 }
 
 function dateTime(date:Date):void
