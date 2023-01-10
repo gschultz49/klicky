@@ -43,7 +43,7 @@ function logKey(e) {
   log.textContent = `The alt key is pressed: ${e.altKey}`;
 }
 
-//using mouseevent to hover over button and 
+//using mouseevent to hover over button and print MouseOver and Mouse Event
 
 		const something = document.getElementById("clickIt");
 		const bye = document.getElementById("hoverPara");
@@ -67,10 +67,4 @@ function logKey(e) {
 					"Click Event" + "<br>";
 		}
 
-		const div = documet.querySelector("#myDiv");
 		
-		div.addEventListner("click", e =>{
-			console.log("you clicked the mouse!");
-		})
-		
-
