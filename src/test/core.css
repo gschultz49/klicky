@@ -158,7 +158,7 @@ body {
 }
 
 .sidebar__bottom {
-  height:fit-content;
+  text-align: left;
   padding: 10px;
   border: 1px solid lightgray;
   background-color: white;
@@ -281,6 +281,30 @@ body {
 
 .post__info {
   margin-left: 10px;
+  padding-right:335px;
+}
+
+.material-icons > img{
+  margin-top:5px; 
+  transition: transform .3s ease-in-out;
+}
+
+.material-icons > img:hover{
+  background-color:  rgb(230,230,230);
+  border-radius: 200px;
+  transform: rotate(180deg) scale(120%);
+}
+
+#why{
+  margin-left:14px;
+}
+
+.inputOption > .material-icons{
+  transition: transform .3s ease-in-out;
+}
+
+.inputOption > .material-icons:hover{
+  transform: scale(200%) rotate(-20deg);
 }
 
 .post__info > p {
