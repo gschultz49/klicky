@@ -2,12 +2,12 @@
   "name": "klicky",
   "version": "1.0.0",
   "description": "",
-  "main": "test.html",
+  "main": "index.html",
   "scripts": {
     "check": "node setup.js",
-    "start": "parcel test.html --open",
-    "start-test": "parcel test.html --open",
-    "build": "parcel build test.html"
+    "start": "parcel index.html --open",
+    "start-test": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "parcel-bundler": "^1.6.1"
