@@ -2,7 +2,7 @@ export const Klicky = () => {
   console.log("klickly ran!");
 };
 
-const outer = document.querySelector('.outer');
+const rootHtmlBody = document.querySelector('.rootHtmlBody');
 
 const capture = {
   capture : true
@@ -16,7 +16,7 @@ const once = {
   once : false 
 };
 
-outer?.addEventListener('click', onceHandler, once);
+rootHtmlBody?.addEventListener('click', onceHandler, once);
 
 function onceHandler(event)
 {
