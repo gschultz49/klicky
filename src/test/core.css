@@ -88,14 +88,12 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
 /* Sidebar */
 .sidebar {
-  position: sticky;
-  top: 80px;
   flex: 0.2;
   border-radius: 10px;
   text-align: center;
-  height: fit-content;
 }
 
 .sidebar__top > img {
@@ -160,12 +158,17 @@ body {
 }
 
 .sidebar__bottom {
-  text-align: left;
+  height:fit-content;
   padding: 10px;
   border: 1px solid lightgray;
   background-color: white;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+.leftsidedown{
+  position: sticky;
+  top: 80px;
 }
 
 .sidebar__recentItem {
