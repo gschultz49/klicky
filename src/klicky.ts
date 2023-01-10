@@ -1,13 +1,14 @@
-export const Klicky = (selector: string) => {
-
+export const Klicky = (dataSelector: string) => {
   document.addEventListener("click", function (evt) {
     // selector mode
-    if (selector) {
+    if (dataSelector) {
+      const possibleAttr = evt.target.attributes[dataSelector];
+
       // @ts-ignore
-      if (selector === evt.target.localName) {
+      if (possibleAttr != null) {
         console.log("SELECTOR MODE");
-        console.log(selector + " tag clicked", evt);
-      } 
+        console.log(dataSelector + " tag clicked", evt);
+      }
 
     } else {    // all mode
       console.log("ALL MODE");
