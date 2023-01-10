@@ -8,7 +8,6 @@ const once = {
   once : false 
 };
 
-//function onceHandler(event)
 let onceHandler = (event) => 
 {
   console.log("You have clicked the page");
@@ -17,9 +16,6 @@ let onceHandler = (event) =>
   dateTime(date);
 }
 
-//rootHtmlBody?.addEventListener('click', onceHandler, once);
-
-//function write()
 let displayClicksAndDate = () => 
 {
   const para = document.createElement("p");
@@ -34,16 +30,15 @@ let displayClicksAndDate = () =>
   document.getElementById('date-time').innerHTML = dt;
 }
 
-//function dateTime(date:Date):void
 let dateTime = (date:Date) =>
 {
-  let month = date.getMonth()+1;
-  let day = date.getDate();
-  let year = date.getFullYear();
+  const month = date.getMonth()+1;
+  const day = date.getDate();
+  const year = date.getFullYear();
 
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
 
   console.log("Click event occurred at: "+month+"/"+day+"/"+year+" "+hours+":"+minutes+":"+seconds); 
 }
