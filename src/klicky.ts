@@ -4,14 +4,6 @@ export const Klicky = () => {
 
 const rootHtmlBody = document.querySelector('.rootHtmlBody');
 
-const capture = {
-  capture : true
-};
-
-const noneCapture = {
-  capture : false 
-};
-
 const once = {
   once : false 
 };
