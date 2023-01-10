@@ -419,3 +419,14 @@ body {
   border-radius: 50px;
   background-color: rgb(230,230,230);
 }
+
+.reaction{
+  padding-top:5px;
+  border-bottom: solid 1px skyblue;
+  padding-bottom: 5px;
+}
+
+.reaction > p{
+  font-size:small;
+  cursor: pointer;
+}
