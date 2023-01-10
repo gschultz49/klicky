@@ -158,6 +158,7 @@ body {
 }
 
 .sidebar__bottom {
+  font-weight: bold;
   text-align: left;
   padding: 10px;
   border: 1px solid lightgray;
@@ -438,13 +439,21 @@ body {
 }
 
 .cols{
-  margin: 0.2rem -2.5rem;
+  margin: 0.1rem -1rem;
 }
 
-.cols > p:hover{
+.cols > a:hover{
   cursor: pointer;
   border-radius: 50px;
   background-color: rgb(230,230,230);
+}
+
+a{
+  all:inherit;
+}
+
+#exception{
+  all:unset;
 }
 
 .reaction{
@@ -457,10 +466,3 @@ body {
   font-size:small;
   cursor: pointer;
 }
-
-a{
-  all:unset;
-  cursor: pointer;
-  border-radius: 50px;
-  background-color: rgb(230,230,230); 
-} 
