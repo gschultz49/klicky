@@ -40,7 +40,6 @@ let dateTime = (date:Date) =>
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
 
-  //console.log("Click event occurred at: "+month+"/"+day+"/"+year+" "+hours+":"+minutes+":"+seconds); 
   console.log(`Click event occurred at: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`);
 }
 
