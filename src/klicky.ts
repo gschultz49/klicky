@@ -8,15 +8,16 @@ const once = {
   once : false 
 };
 
-rootHtmlBody?.addEventListener('click', onceHandler, once);
-
-function onceHandler(event)
+//function onceHandler(event)
+let onceHandler = (event) => 
 {
   console.log("You have clicked the page");
   write();
   let date = new Date();
   dateTime(date);
 }
+
+rootHtmlBody?.addEventListener('click', onceHandler, once);
 
 function write()
 {
