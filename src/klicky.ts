@@ -34,7 +34,8 @@ let displayClicksAndDate = () =>
   document.getElementById('date-time').innerHTML = dt;
 }
 
-function dateTime(date:Date):void
+//function dateTime(date:Date):void
+let dateTime = (date:Date) =>
 {
   let month = date.getMonth()+1;
   let day = date.getDate();
