@@ -12,14 +12,15 @@ const once = {
 let onceHandler = (event) => 
 {
   console.log("You have clicked the page");
-  write();
+  displayClicksAndDate();
   let date = new Date();
   dateTime(date);
 }
 
-rootHtmlBody?.addEventListener('click', onceHandler, once);
+//rootHtmlBody?.addEventListener('click', onceHandler, once);
 
-function write()
+//function write()
+let displayClicksAndDate = () => 
 {
   const para = document.createElement("p");
   para.innerText = "You have clicked the page!";
@@ -45,3 +46,5 @@ function dateTime(date:Date):void
 
   console.log("Click event occurred at: "+month+"/"+day+"/"+year+" "+hours+":"+minutes+":"+seconds); 
 }
+
+rootHtmlBody?.addEventListener('click', onceHandler, once);
