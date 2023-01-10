@@ -457,3 +457,10 @@ body {
   font-size:small;
   cursor: pointer;
 }
+
+a{
+  all:unset;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: rgb(230,230,230); 
+} 
