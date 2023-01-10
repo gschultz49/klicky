@@ -26,3 +26,7 @@ p{
   75% {transform: translateX(-100px);}
   100% {transform: translateX(100px);}
 }
+
+p {
+  color: blue;
+}
