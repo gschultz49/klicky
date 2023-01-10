@@ -14,7 +14,7 @@ function onceHandler(event)
 {
   console.log("You have clicked the page");
   write();
-  var date = new Date();
+  let date = new Date();
   dateTime(date);
 }
 
@@ -24,7 +24,7 @@ function write()
   para.innerText = "You have clicked the page!";
   document.body.appendChild(para);
 
-  var dt = new Date();
+  let dt = new Date();
   const datetime = document.createElement("p");
   datetime.innerHTML = dt;
   document.body.appendChild(datetime);
@@ -34,13 +34,13 @@ function write()
 
 function dateTime(date:Date):void
 {
-  var month = date.getMonth()+1;
-  var day = date.getDate();
-  var year = date.getFullYear();
+  let month = date.getMonth()+1;
+  let day = date.getDate();
+  let year = date.getFullYear();
 
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var seconds = date.getSeconds();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
 
   console.log("Click event occurred at: "+month+"/"+day+"/"+year+" "+hours+":"+minutes+":"+seconds); 
 }
