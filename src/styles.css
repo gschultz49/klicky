@@ -5,3 +5,8 @@ span {
   transition: background-color 1000ms linear;
 }
 
+body {
+  background-color: palevioletred;
+width: 20px;
+height:20px;
+}

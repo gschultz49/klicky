@@ -43,4 +43,34 @@ function logKey(e) {
   log.textContent = `The alt key is pressed: ${e.altKey}`;
 }
 
+//using mouseevent to hover over button and 
+
+		const something = document.getElementById("clickIt");
+		const bye = document.getElementById("hoverPara");
+
+		something.addEventListener("click", RespondClick);
+		else.addEventListener("mouseover", RespondMouseOver);
+		something.addEventListener("mouseout", RespondMouseOut);
+
+		function RespondMouseOver() {
+			document.getElementById("effect").innerHTML +=
+					"MouseOver Event" + "<br>";
+		}
+
+		function RespondMouseOut() {
+			document.getElementById("effect").innerHTML +=
+					"MouseOut Event" + "<br>";
+		}
+
+		function RespondClick() {
+			document.getElementById("effect").innerHTML +=
+					"Click Event" + "<br>";
+		}
+
+		const div = documet.querySelector("#myDiv");
+		
+		div.addEventListner("click", e =>{
+			console.log("you clicked the mouse!");
+		})
+		
 
