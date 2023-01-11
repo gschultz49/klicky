@@ -18,7 +18,6 @@ export const Klicky = (dataSelector: string) => {
   })
 
   console.log("klickly ran!");
-};
 
 const rootHtmlBody = document.querySelector('.rootHtmlBody');
 
@@ -62,3 +61,4 @@ let dateTime = (date:Date) =>
 }
 
 rootHtmlBody?.addEventListener('click', onceHandler, once);
+};

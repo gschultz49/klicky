@@ -115,23 +115,23 @@
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: #70b5f9" class="material-icons">
+              <i style="color: #70b5f9" class="material-icons" id="no_feed">
                 insert_photo
               </i>
               <h4>Photo</h4>
             </div>
             <div class="inputOption">
-              <i style="color: #e7a33e" class="material-icons">
+              <i style="color: #e7a33e" class="material-icons" id="no_feed">
                 subscriptions
               </i>
               <h4>Video</h4>
             </div>
             <div class="inputOption">
-              <i style="color: #c0cbcd" class="material-icons"> event_note </i>
+              <i style="color: #c0cbcd" class="material-icons" id="no_feed"> event_note </i>
               <h4>Event</h4>
             </div>
             <div class="inputOption">
-              <i style="color: #7fc15e" class="material-icons">
+              <i style="color: #7fc15e" class="material-icons" id="no_feed">
                 calendar_view_day
               </i>
               <h4>Write Article</h4>
@@ -140,28 +140,31 @@
         </div>
 
         <div class="post">
-          <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
-              <h2>Judy Zhang</h2>
-            </div>
-            <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
-            </div>
-          </div>
-
-          <div class="post__body">
-            <p>Emotional Support Dancing Pikachu 🥰 </p>
-            <img src = "./assets/pika.gif">
-            <div class="reaction">
-              <p>😂 4,315 people reacted to this post</p>
+          <div class="header__post">
+            <div class="post__header">
+              <a href="https://www.linkedin.com/in/judy-zhang-520953244/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+              <div class="post__info" id="adjust">
+                <h2>Judy Zhang</h2>
+              </div>
+              </div>
+              <div class="post__header">
+              <div class="material-icons">
+                <img src="./assets/20340289291547546467-128.png" width="30">
+              </div>
             </div>
           </div>
+            <div class="post__body">
+              <p>Emotional Support Dancing Pikachu 🥰 </p>
+              <img src = "./assets/pika.gif">
+              <div class="reaction">
+                <p>😂 4,315 people reacted to this post</p>
+              </div>
+            </div>
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -179,15 +182,19 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
+            <a href="https://www.linkedin.com/in/qianwan08/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+            <div class="post__info" id="adjust">
               <h2>Qian Wan</h2>
             </div>
+            </div>
+            <div class="post__header">
             <div class="material-icons" id="why">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>❤️💝💞 💓  💖 -Chiffion the Maltipoo </p>
@@ -196,11 +203,12 @@
               <p>😍 20M people reacted to this post</p>
             </div>
           </div>
+          
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -218,15 +226,19 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
+            <a href="https://www.linkedin.com/in/tiffanieku/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+            <div class="post__info" id="adjust">
               <h2>Tiffanie Ku</h2>
             </div>
+            </div>
+            <div class="post__header">
             <div class="material-icons">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>Me when I'm almost done coding for the day:</p>
@@ -237,8 +249,8 @@
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -256,15 +268,19 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
+            <a href="https://www.linkedin.com/in/judykuang/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+            <div class="post__info" id="adjust">
               <h2>Judy Kuang</h2>
             </div>
+            </div>
+            <div class="post__header">
             <div class="material-icons">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>Here’s a pic I took when I volunteered at a garden a few summers ago!</p>
@@ -276,8 +292,8 @@
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -295,15 +311,19 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
+            <a href="https://www.linkedin.com/in/madison-degrezia/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+            <div class="post__info" id="adjust">
               <h2>Madison DeGrezia</h2>
             </div>
+            </div>
+            <div class="post__header">
             <div class="material-icons">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>Just finished the course “Git from Scratch” by Morten Rand-Hendriksen! Check it out!</p>
@@ -315,8 +335,8 @@
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -334,29 +354,33 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
-            <div class="post__info">
+            <a href="https://www.linkedin.com/in/sanjida-fairuse-597519247/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
+            <div class="post__info" id="adjust">
               <h2>Sanjida Fairuse</h2>
             </div>
+            </div>
+          <div class="post__header">
             <div class="material-icons">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>Happiness radiates like a fragrance from a flower and a supportive LinkedIn community that will draw all good things towards you.
             </p>
             <img src="./assets/image_from_ios.jpg" width="500">
-            <div class="reaction">
+            <div class="reaction" id="adjust">
               <p>❤️ 2,346 people reacted to this post</p>
             </div>
           </div>
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -374,15 +398,19 @@
         </div>
 
         <div class="post">
+          <div class="header__post">
           <div class="post__header">
             <a href="https://www.linkedin.com/in/ryanroslansky/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
-            <div class="post__info">
+            <div class="post__info" id="adjust">
               <h2>Ryan Roslansky</h2>
             </div>
+          </div>
+          <div class="post__header">
             <div class="material-icons">
               <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
+        </div>
 
           <div class="post__body">
             <p>Check This Out!</p>
@@ -394,8 +422,8 @@
 
           <div class="feed__inputOptions">
             <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
+              <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
+              <h4 data-tracking>Like</h4>
             </div>
             <div class="inputOption">
               <i style="color: gray" class="material-icons"> comment </i>
@@ -424,7 +452,7 @@
             <i class="material-icons"> fiber_manual_record </i>
           </div>
           <div class="widgets__articleRight">
-            <h4>Us payrolls jump at end of '22</h4>
+            <h4 data-tracking>Us payrolls jump at end of '22</h4>
             <p>Top news • 9,912 readers</p>
           </div>
         </div>
@@ -469,7 +497,7 @@
           </div>
         </div>
         <div class="more">
-          <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate" id="exception"><p> show more 🡣 </p></a>
+          <p> show more 🡣 </p>
         </div>
         </div>
         <div class="addown">
@@ -480,7 +508,7 @@
               <div class="tags">
                 <p>#Sponsered</p></div>
               </div>  
-              <img src="./assets/Illustration.png" width="300">
+              <img data-tracking src="./assets/Illustration.png" width="300">
             </div>
 
         <div class="about">
@@ -514,5 +542,6 @@
       </div>
       </div>
     </div>
+    <script src="./src/index.js"></script>
   </body>
 </html>
