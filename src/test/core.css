@@ -244,6 +244,10 @@ body {
   justify-content: space-evenly;
 }
 
+#no_feed{
+  transform: none;
+}
+
 .inputOption {
   display: flex;
   align-items: center;
@@ -257,6 +261,11 @@ body {
   color:black;
   background-color: whitesmoke;
   border-radius: 10px;
+}
+
+.inputOption:hover > .material-icons{
+  transition: transform .3s ease-in-out;
+  transform: scale(200%) rotate(-20deg);
 }
 
 .inputOption > h4 {
@@ -298,14 +307,6 @@ body {
 
 #why{
   margin-left:14px;
-}
-
-.inputOption > .material-icons{
-  transition: transform .3s ease-in-out;
-}
-
-.inputOption > .material-icons:hover{
-  transform: scale(200%) rotate(-20deg);
 }
 
 .post__info > p {
