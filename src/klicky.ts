@@ -22,10 +22,8 @@ button.addEventListener("mousemove", event => {
   console.log(event)
 })
 
-
-const button = document.querySelector("submit")
-button.addEventListener("submit", event => {
-  console.log(event)
+// Focus event
+let inputElem = document.querySelector("input");
+window.addEventListener('load', function(event) {
+	inputElem.focus(event);
 })
-
-
