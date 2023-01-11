@@ -22,3 +22,7 @@ button.addEventListener("mousemove", event => {
   console.log(event)
 })
 
+  console.log("klickly ran!");
+
+};
+
