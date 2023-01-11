@@ -1,8 +1,30 @@
-span {
-  background-color: yellow;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
+body{
+  background-color: peachpuff;
+  overflow: hidden;
+}
+p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-shadow: 2px 1px 1px darkgoldenrod;
+  z-index: 1;
+  padding-top: 5%;
+  color: white;
+  text-align: center;
+} 
+.pika{
+  padding-top: 1%;
+  z-index: 3;
+  text-align: center;
+  animation-name:pika;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes pika{
+  0% {transform: translateX(100px);}
+  25% {transform: translateX(-100px);}
+  50% {transform: translateX(100px);}
+  75% {transform: translateX(-100px);}
+  100% {transform: translateX(100px);}
 }
 
 p {
