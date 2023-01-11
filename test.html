@@ -12,12 +12,13 @@
     <title>LinkedIn UI Clone</title>
   </head>
   <body>
+    <div class="loading"></div>
     <div class="header">
       <div class="header__left">
-        <img
-          src="https://www.flaticon.com/free-icon/clown_9254829?related_id=9254829&origin=pack"
+        <a href="https://www.linkedin.com/feed/" id="exception"><img
+          src="./assets/logo.png"
           alt=""
-        />
+        /></a>
         <div class="header__search">
           <i class="material-icons"> search </i>
           <input type="text" />
@@ -59,7 +60,7 @@
             src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080"
             alt=""
           />
-          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <a href="https://www.linkedin.com/in/ryanroslansky/" id="exception"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
           <h2>Ryan Roslansky</h2>
           <h4>ryan@linkedin.com</h4>
         </div>
@@ -75,27 +76,29 @@
           </div>
         </div>
 
-        <div class="sidebar__bottom">
-          <p>Recent</p>
-          <div class="sidebar__recentItem">
-            <span class="sidebar__hash">#</span>
-            <p>reactjs</p>
-          </div>
-          <div class="sidebar__recentItem">
-            <span class="sidebar__hash">#</span>
-            <p>programming</p>
-          </div>
-          <div class="sidebar__recentItem">
-            <span class="sidebar__hash">#</span>
-            <p>softwareengineering</p>
-          </div>
-          <div class="sidebar__recentItem">
-            <span class="sidebar__hash">#</span>
-            <p>design</p>
-          </div>
-          <div class="sidebar__recentItem">
-            <span class="sidebar__hash">#</span>
-            <p>developer</p>
+        <div class="leftsidedown">
+          <div class="sidebar__bottom">
+            <p>Recent</p>
+            <div class="sidebar__recentItem">
+              <span class="sidebar__hash">#</span>
+              <p>reactjs</p>
+            </div>
+            <div class="sidebar__recentItem">
+              <span class="sidebar__hash">#</span>
+              <p>programming</p>
+            </div>
+            <div class="sidebar__recentItem">
+              <span class="sidebar__hash">#</span>
+              <p>softwareengineering</p>
+            </div>
+            <div class="sidebar__recentItem">
+              <span class="sidebar__hash">#</span>
+              <p>design</p>
+            </div>
+            <div class="sidebar__recentItem">
+              <span class="sidebar__hash">#</span>
+              <p>developer</p>
+            </div>
           </div>
         </div>
       </div>
@@ -140,12 +143,19 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Judy Zhang</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Emotional Support Dancing Pikachu 🥰 </p>
+            <img src = "./assets/pika.gif">
+            <div class="reaction">
+              <p>😂 4,315 people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -172,12 +182,19 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Qian Wan</h2>
+            </div>
+            <div class="material-icons" id="why">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>❤️💝💞 💓  💖 -Chiffion the Maltipoo </p>
+            <img src="./assets/download.png" width="500" >
+            <div class="reaction">
+              <p>😍 20M people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -204,12 +221,18 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Tiffanie Ku</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Me when I'm almost done coding for the day:</p>
+            <img src="./assets/cat.gif" width="500"><div class="reaction">
+              <p>😻 5,515 people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -236,12 +259,19 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Judy Kuang</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Here’s a pic I took when I volunteered at a garden a few summers ago!</p>
+            <img src="./assets/img_2062.jpg" width="500">
+            <div class="reaction">
+              <p>😍 3,414 people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -268,12 +298,19 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Madison DeGrezia</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Just finished the course “Git from Scratch” by Morten Rand-Hendriksen! Check it out!</p>
+            <img src="./assets/1672937889447.png" width="500">
+            <div class="reaction">
+              <p>🥳 4,562 people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -300,12 +337,20 @@
           <div class="post__header">
             <i class="material-icons sidebar__topAvatar"> account_circle </i>
             <div class="post__info">
-              <h2>Ryan Roslansky</h2>
+              <h2>Sanjida Fairuse</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Happiness radiates like a fragrance from a flower and a supportive LinkedIn community that will draw all good things towards you.
+            </p>
+            <img src="./assets/image_from_ios.jpg" width="500">
+            <div class="reaction">
+              <p>❤️ 2,346 people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -330,14 +375,21 @@
 
         <div class="post">
           <div class="post__header">
-            <i class="material-icons sidebar__topAvatar"> account_circle </i>
+            <a href="https://www.linkedin.com/in/ryanroslansky/"><i class="material-icons sidebar__topAvatar"> account_circle </i></a>
             <div class="post__info">
               <h2>Ryan Roslansky</h2>
+            </div>
+            <div class="material-icons">
+              <img src="./assets/20340289291547546467-128.png" width="30">
             </div>
           </div>
 
           <div class="post__body">
-            <p>Message here</p>
+            <p>Check This Out!</p>
+            <img src="./assets/maxresdefault.jpg" width="500">
+            <div class="reaction">
+              <p>😲 5.1M people reacted to this post</p>
+            </div>
           </div>
 
           <div class="feed__inputOptions">
@@ -361,9 +413,10 @@
         </div>
       </div>
 
+      <div class="newads">
       <div class="widgets">
         <div class="widgets__header">
-          <h2>LinkedIn Clone</h2>
+          <h2>LinkedIn News</h2>
           <i class="material-icons"> info </i>
         </div>
         <div class="widgets__article">
@@ -371,8 +424,8 @@
             <i class="material-icons"> fiber_manual_record </i>
           </div>
           <div class="widgets__articleRight">
-            <h4>Coding LinkedIn Clone</h4>
-            <p>Top news - 4500 readers</p>
+            <h4>Us payrolls jump at end of '22</h4>
+            <p>Top news • 9,912 readers</p>
           </div>
         </div>
 
@@ -381,8 +434,8 @@
             <i class="material-icons"> fiber_manual_record </i>
           </div>
           <div class="widgets__articleRight">
-            <h4>Coding LinkedIn Clone</h4>
-            <p>Top news - 4500 readers</p>
+            <h4>Is Florida actually a good deal?</h4>
+            <p>2h ago	• 20,696 readers</p>
           </div>
         </div>
 
@@ -391,10 +444,74 @@
             <i class="material-icons"> fiber_manual_record </i>
           </div>
           <div class="widgets__articleRight">
-            <h4>Coding LinkedIn Clone</h4>
-            <p>Top news - 4500 readers</p>
+            <h4>Remote work may be past its prime</h4>
+            <p>2h	ago • 29,232 readers</p>
           </div>
         </div>
+
+        <div class="widgets__article">
+          <div class="widgets__articleLeft">
+            <i class="material-icons"> fiber_manual_record </i>
+          </div>
+          <div class="widgets__articleRight">
+            <h4>Companies are pivoting for pets</h4>
+            <p>2h	ago • 7,050 readers</p>
+          </div>
+        </div>
+
+        <div class="widgets__article">
+          <div class="widgets__articleLeft">
+            <i class="material-icons"> fiber_manual_record </i>
+          </div>
+          <div class="widgets__articleRight">
+            <h4>Southwest's meltdown could cost $825M</h4>
+            <p>1h	ago • 3,396 readers</p>
+          </div>
+        </div>
+        <div class="more">
+          <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate" id="exception"><p> show more 🡣 </p></a>
+        </div>
+        </div>
+        <div class="addown">
+          <div class="ad">
+            <div class="row">
+              <div class="tags">
+                <p>#Ad</p></div>
+              <div class="tags">
+                <p>#Sponsered</p></div>
+              </div>  
+              <img src="./assets/Illustration.png" width="300">
+            </div>
+
+        <div class="about">
+          <div class="rows">
+            <div class="cols">
+            <a href="https://about.linkedin.com"><p>About</p></a></div>
+            <div class="cols">
+            <a href="https://www.linkedin.com/accessibility?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5Hhc3xBFQLmtKQ1q3rHa%2Fg%3D%3D"><p>Accessibility</p></div></a>
+            <div class="cols">
+            <a href="https://www.linkedin.com//help/linkedin?trk=footer_d_flagship3_feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5Hhc3xBFQLmtKQ1q3rHa%2Fg%3D%3D"><p>Help Center</p></div></a>
+          </div>
+          <div class="rows">
+            <div class="cols">
+            <a href="https://www.linkedin.com/static?key=privacy_policy&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5Hhc3xBFQLmtKQ1q3rHa%2Fg%3D%3D"><p>Privacy & Terms</p></div></a>
+            <div class="cols">
+            <a href="https://www.linkedin.com/help/linkedin/answer/62931?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5Hhc3xBFQLmtKQ1q3rHa%2Fg%3D%3D"><p>Ad Choices</p></div></a>
+          </div>  
+          <div class="rows">
+            <div class="cols">
+            <a href="https://www.linkedin.com/ad/start?trk=n_nav_ads_rr&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5Hhc3xBFQLmtKQ1q3rHa%2Fg%3D%3D"><p>Advertising</p></div></a>
+            <div class="cols">
+            <a href="https://business.linkedin.com/talent-solutions?trk=flagship_nav&veh=li-header-dropdown-lts-control&src=li-nav"><p>Business Services</p></div></a>
+          </div>
+          <div class="rows">
+            <div class="cols">
+            <a href="https://mobile.linkedin.com"><p>Get the LinkedIn app</p></div></a>
+            <div class="cols">
+            <a href="https://www.linkedin.com/feed/"><p>More</p></div></a>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </body>

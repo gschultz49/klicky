@@ -1,7 +1,5 @@
 import { Klicky } from "./klicky";
 
-Klicky();
-
-
+Klicky('data-tracking');
 
 
