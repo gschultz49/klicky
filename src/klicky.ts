@@ -18,4 +18,5 @@ export const Klicky = (dataSelector: string) => {
   })
 
   console.log("klickly ran!");
+
 };
