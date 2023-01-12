@@ -1,3 +1,4 @@
-import { Klicky } from "./klicky";
+import { ButtonClick, Klicky } from "./klicky";
 
+ButtonClick();
 Klicky('data-tracking');

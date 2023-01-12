@@ -1,5 +1,8 @@
+export const ButtonClick = () => {
+  document.getElementById("evt_button")?.click();
+}
+
 export const Klicky = (dataSelector: string) => {
-  const eventViewer = document.querySelector('.event_viewer');
   document.addEventListener("click", function (evt) {
     // selector mode
     if (dataSelector) {
@@ -9,14 +12,14 @@ export const Klicky = (dataSelector: string) => {
       if (possibleAttr != null) {
         console.log("SELECTOR MODE");
         console.log(dataSelector + " tag clicked", evt);
-        displayClicksAndDate();
+        displayClicksAndDate(evt);
       }
 
     } else {    // all mode
       console.log("ALL MODE");
       // @ts-ignore
-      console.log(evt.target.localName + " anything clicked", evt);
-      displayClicksAndDate();
+      console.log(evt.target.localName + " clicked", evt);
+      displayClicksAndDate(evt);
     }
   })
 
@@ -36,20 +39,20 @@ let onceHandler = (evt) =>
   dateTime(date);
 }
 
-let displayClicksAndDate = () => 
+let displayClicksAndDate = (evt) => 
 {
   const tag = document.getElementById('filtered_data');
   
-  const para = document.createElement("li");
-  para.innerText = "You have clicked the page!";
-  tag.appendChild(para);
-
   let dt = new Date();
   const datetime = document.createElement("li");
-  datetime.innerHTML = dt;
+  datetime.innerHTML = dateTime(dt);
   tag.appendChild(datetime);
 
-  //document.getElementById('filtered_data').innerHTML = dt;
+  const para = document.createElement("li");
+  para.innerText = evt.target.localName + " tag clicked!";
+  tag.appendChild(para);
+  const space = document.createElement("br");
+  tag.appendChild(space);
 }
 
 let dateTime = (date:Date) =>
@@ -62,7 +65,23 @@ let dateTime = (date:Date) =>
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
 
+  var timeValue;
+  if (hours > 0 && hours <= 12) {
+    timeValue= "" + hours;
+  } else if (hours > 12) {
+    timeValue= "" + (hours - 12);
+  } else if (hours == 0) {
+    timeValue= "12";
+  }
+  
+  timeValue += (minutes < 10) ? ":0" + minutes : ":" + minutes;  // get minutes
+  timeValue += (seconds < 10) ? ":0" + seconds : ":" + seconds;  // get seconds
+  timeValue += (hours >= 12) ? " P.M." : " A.M.";  // get AM/PM
+  
+  const msg = `${month}/${day}/${year}` + ' ' + timeValue;
+
   console.log(`Click event occurred at: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`);
+  return msg;
 }
 
 rootHtmlBody?.addEventListener('click', onceHandler, once);
