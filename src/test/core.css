@@ -384,14 +384,18 @@ body {
 
 .more{
   display: flex;
-  padding-left:30px;
+  border-style: none;
+  background-color:white;
+  margin-left:20px;
   color:gray;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.more p:hover{
+.more:hover{
   background-color: whitesmoke;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
