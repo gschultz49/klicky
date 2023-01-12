@@ -213,8 +213,8 @@ body {
 }
 
 .event{
-  padding-top:5%;
-  padding-bottom: 5%;
+  padding-top:2%;
+  padding-bottom: 2%;
   display:flex;
   justify-content: space-between;
 }
@@ -474,6 +474,13 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
+#no_formatting{
+  border:none;
+  background-color: white;
+}
+/* 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate */
 
 .ad{
   height: fit-content;
