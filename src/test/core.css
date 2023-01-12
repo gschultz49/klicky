@@ -298,6 +298,10 @@ body {
   align-items: center;
 }
 
+.post__body > img{
+  justify-content: center;
+}
+
 .material-icons > img{
   margin-top:5px; 
   transition: transform .3s ease-in-out;
