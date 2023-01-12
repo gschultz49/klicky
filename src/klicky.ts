@@ -71,4 +71,3 @@ let dateTime = (date:Date) =>
 
 rootHtmlBody?.addEventListener('click', onceHandler, once);
 };
-
