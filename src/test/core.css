@@ -85,9 +85,10 @@ body {
 .body__main {
   display: flex;
   margin-top: 35px;
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  zoom: 85%;
 }
 
 /* Sidebar */
@@ -245,11 +246,7 @@ body {
   justify-content: space-evenly;
 }
 
-#no_feed{
-  transform: none;
-}
-
-.inputOption {
+.inputOption, .event_button {
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -475,6 +472,59 @@ a{
   cursor: pointer;
 }
 
-#adjust{
-  margin-bottom: 5px;
+/* Event Viewer */
+.event_viewer {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  margin-left: 10px;
+}
+
+/* 'Button' */
+.event_button {
+  color: black;
+  padding: 10px;
+  margin-top: 0px;
+  width: 225px;
+}
+
+.event_button:hover {
+  background-color: whitesmoke;
+}
+
+.event_view_text {
+  margin-left: 10px;
+}
+
+/* Checkbox that triggers toggle */
+.hidden, #toggle {
+  display: none;
+}
+
+#toggle:checked ~ .hidden {
+  display: block;
+}
+
+/* Event data */
+#event_data {
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#toggle ~ label i {
+  transition: all ease-in-out .3s;
+}
+
+#toggle:checked ~ label i {
+  transform: rotate(45deg);
 }
