@@ -1,8 +1,10 @@
 export const Klicky = (dataSelector: string) => {
   document.addEventListener("click", function (evt) {
-  console.log(evt);
-})
-
+    document.addEventListener("click", function(event){
+    console.log(event);
+  })  
+  
+  
 function getEventType(event) {
 	console.log (event)
 }
@@ -76,4 +78,5 @@ let dateTime = (date:Date) =>
 }
 
 rootHtmlBody?.addEventListener('click', onceHandler, once);
-};
+
+}
