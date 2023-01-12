@@ -16,6 +16,22 @@ export const Klicky = (dataSelector: string) => {
       console.log(evt.target.localName + " anything clicked", evt);
     }
   })
+// Pointer event
+document.addEventListener("click", function(event){
+  console.log(event);
+})
+
+function getEventType(event) {
+	console.log (event)
+}
+//keyboard event
+document.addEventListener('keydown', getEventType, false); 
+
+// Mouse Event
+const button = document.querySelector("button")
+button.addEventListener("mousemove", event => {
+  console.log(event)
+})
 
   console.log("klickly ran!");
 
