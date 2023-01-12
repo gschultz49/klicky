@@ -1,5 +1,19 @@
 export const Klicky = (dataSelector: string) => {
   document.addEventListener("click", function (evt) {
+  console.log(evt);
+})
+
+function getEventType(event) {
+	console.log (event)
+}
+//keyboard event
+document.addEventListener('keydown', getEventType, false); 
+
+// Mouse Event
+const button = document.querySelector("button")
+button.addEventListener("mousemove", event => {
+  console.log(event)
+})
     // selector mode
     if (dataSelector) {
       const possibleAttr = evt.target.attributes[dataSelector];
@@ -16,6 +30,7 @@ export const Klicky = (dataSelector: string) => {
       console.log(evt.target.localName + " anything clicked", evt);
     }
   })
+
 
   console.log("klickly ran!");
 
