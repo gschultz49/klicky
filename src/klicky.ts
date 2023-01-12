@@ -1,8 +1,6 @@
 export const Klicky = (dataSelector: string) => {
   document.addEventListener("click", function (evt) {
-    // Pointer event
- document.addEventListener("click", function(event){
-  console.log(event);
+  console.log(evt);
 })
 
 function getEventType(event) {
