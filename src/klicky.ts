@@ -25,13 +25,13 @@ const once = {
   once : false 
 };
 
-let onceHandler = (event) => 
-{
-  console.log("You have clicked the page");
-  displayClicksAndDate();
-  let date = new Date();
-  dateTime(date);
-}
+// let onceHandler = (event) => 
+// {
+//   console.log("You have clicked the page");
+//   displayClicksAndDate();
+//   let date = new Date();
+//   dateTime(date);
+// }
 
 let displayClicksAndDate = () => 
 {
@@ -58,6 +58,14 @@ let dateTime = (date:Date) =>
   const seconds = date.getSeconds();
 
   console.log(`Click event occurred at: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`);
+}
+
+let onceHandler = (event) => 
+{
+  console.log("You have clicked the page");
+  displayClicksAndDate();
+  let date = new Date();
+  dateTime(date);
 }
 
 rootHtmlBody?.addEventListener('click', onceHandler, once);
