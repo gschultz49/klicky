@@ -80,13 +80,15 @@ body {
   width: 20px;
 }
 
+
 /* Main Body */
 .body__main {
   display: flex;
   margin-top: 35px;
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+  zoom: 85%;
 }
 
 /* Sidebar */
@@ -244,7 +246,7 @@ body {
   justify-content: space-evenly;
 }
 
-.inputOption {
+.inputOption, .event_button {
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -259,6 +261,11 @@ body {
   border-radius: 10px;
 }
 
+.inputOption:hover > .material-icons{
+  transition: transform .3s ease-in-out;
+  transform: scale(200%) rotate(-20deg);
+}
+
 .inputOption > h4 {
   margin-left: 20px;
 }
@@ -271,9 +278,14 @@ body {
   border-radius: 10px;
 }
 
+.header__post{
+  display: flex;
+  justify-content: space-between;
+}
+
 .post__header {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .post__body > p{
@@ -282,7 +294,8 @@ body {
 
 .post__info {
   margin-left: 10px;
-  padding-right:335px;
+  display: flex;
+  align-items: center;
 }
 
 .material-icons > img{
@@ -298,14 +311,6 @@ body {
 
 #why{
   margin-left:14px;
-}
-
-.inputOption > .material-icons{
-  transition: transform .3s ease-in-out;
-}
-
-.inputOption > .material-icons:hover{
-  transform: scale(200%) rotate(-20deg);
 }
 
 .post__info > p {
@@ -465,4 +470,61 @@ a{
 .reaction > p{
   font-size:small;
   cursor: pointer;
+}
+
+/* Event Viewer */
+.event_viewer {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  margin-left: 10px;
+}
+
+/* 'Button' */
+.event_button {
+  color: black;
+  padding: 10px;
+  margin-top: 0px;
+  width: 225px;
+}
+
+.event_button:hover {
+  background-color: whitesmoke;
+}
+
+.event_view_text {
+  margin-left: 10px;
+}
+
+/* Checkbox that triggers toggle */
+.hidden, #toggle {
+  display: none;
+}
+
+#toggle:checked ~ .hidden {
+  display: block;
+}
+
+/* Event data */
+#event_data {
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#toggle ~ label i {
+  transition: all ease-in-out .3s;
+}
+
+#toggle:checked ~ label i {
+  transform: rotate(45deg);
 }
