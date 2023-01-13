@@ -123,6 +123,10 @@ body {
   font-size: 40px;
 }
 
+#exception{
+  all:unset;
+}
+
 .sidebar__stats {
   padding: 10px;
   margin-bottom: 10px;
@@ -165,7 +169,8 @@ body {
   padding: 10px;
   border: 1px solid lightgray;
   background-color: white;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   margin-top: 10px;
 }
 
@@ -191,6 +196,11 @@ body {
   color: black;
 }
 
+.sidebar__recentItem > img{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .sidebar__hash {
   margin-right: 10px;
   margin-left: 10px;
@@ -201,7 +211,71 @@ body {
   padding-bottom: 10px;
 }
 
+.groups, .add >p{
+  font-size: 14px;
+  font-family: 'Nirmala UI';
+  color:#0177b7;
+}
+
+.event{
+  padding-top:2%;
+  padding-bottom: 2%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.add > img{
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+
+.add > img:hover{
+  background-color: #f3f2ef;
+  transform:scale(120%);
+}
+
+.groups{
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+.groups > p{
+  padding-bottom: 10px;
+}
+
+.discover{
+  font-weight: bold;
+  background-color:white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: solid 1px lightgray;
+  border-top:none;
+  padding:5%;
+  text-align: center;
+  color:gray;
+}
+
+.discover:hover{
+  color: black;
+  background-color: lightgray;
+  cursor: pointer;
+  border-color: rgb(177, 177, 177);
+}
+
 /* Feed */
+
+.reaction{
+  padding-top:5px;
+  border-bottom: solid 1px lightblue;
+  padding-bottom: 5px;
+}
+
+.reaction > p{
+  font-size:small;
+  cursor: pointer;
+}
+
 .feed {
   flex: 0.6;
   margin: 0 20px;
@@ -283,6 +357,10 @@ body {
   justify-content: space-between;
 }
 
+#adjust{
+  margin-bottom: 5px;;
+}
+
 .post__header {
   display: flex;
   margin-bottom: 5px;
@@ -298,15 +376,19 @@ body {
   align-items: center;
 }
 
+.post__body > img{
+  width:100%;
+}
+
 .material-icons > img{
   margin-top:5px; 
-  transition: transform .3s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .material-icons > img:hover{
   background-color:  rgb(230,230,230);
   border-radius: 200px;
-  transform: rotate(180deg) scale(120%);
+  transform: rotate(90deg) scale(120%);
 }
 
 #why{
@@ -320,6 +402,10 @@ body {
 
 .post__info > h2 {
   font-size: 15px;
+}
+
+#no_feed{
+  transform: none;
 }
 
 /* widgets */
@@ -386,13 +472,25 @@ body {
   display: flex;
   padding-left:30px;
   color:gray;
-  cursor: pointer;
 }
 
-.more p:hover{
+.more > p:hover{
   background-color: whitesmoke;
   border-radius: 50px;
   cursor: pointer;
+}
+
+#no_formatting{
+  border:none;
+  background-color: white;
+  font-size: medium;
+}
+
+#fix{
+  border:none;
+  background-color: white;
+  font-size: medium;
+  margin-left:15px;
 }
 
 .ad{
@@ -457,14 +555,24 @@ a{
   all:inherit;
 }
 
-#exception{
-  all:unset;
+/* Event Viewer */
+.event_viewer {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  margin-left: 10px;
 }
 
-.reaction{
-  padding-top:5px;
-  border-bottom: solid 1px skyblue;
-  padding-bottom: 5px;
+/* 'Button' */
+.event_button {
+  color: black;
+  padding: 10px;
+  margin-top: 0px;
+  width: 225px;
 }
 
 .reaction > p{

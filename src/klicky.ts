@@ -2,18 +2,25 @@ export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
 }
 
+let click_arr = [];
+
 export const Klicky = (dataSelector: string) => {
+  // let click_arr = [];
+  document.getElementById("button_click").addEventListener("click", function (evt) {
+    console.log("All events : " + click_arr);
+  });
 
   document.addEventListener("click", function (evt) {
     // selector mode
+
     if (dataSelector) {
       const possibleAttr = evt.target.attributes[dataSelector];
-
       // @ts-ignore
       if (possibleAttr != null) {
         console.log("SELECTOR MODE");
         console.log(dataSelector + " tag clicked", evt);
         displayClicksAndDate(evt);
+        click_arr.push(evt.target.localName);
       }
 
     } else {    // all mode
@@ -21,8 +28,10 @@ export const Klicky = (dataSelector: string) => {
       // @ts-ignore
       console.log(evt.target.localName + " clicked", evt);
       displayClicksAndDate(evt);
+      click_arr.push(evt.target.localName);
     }
   });
+
   //keyboard event
   document.addEventListener("keydown", getEventType, false);
 
