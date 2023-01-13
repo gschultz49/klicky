@@ -71,7 +71,7 @@ export const Klicky = (dataSelector: string) => {
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
-    var timeValue;
+    let timeValue;
     if (hours > 0 && hours <= 12) {
       timeValue = "" + hours;
     } else if (hours > 12) {
@@ -89,7 +89,5 @@ export const Klicky = (dataSelector: string) => {
     console.log(`Click event occurred at: ${month}/${day}/${year} ${hours}:${minutes}:${seconds}`);
     return msg;
   }
-
-  //rootHtmlBody?.addEventListener('click', onceHandler, once);
 };
 
