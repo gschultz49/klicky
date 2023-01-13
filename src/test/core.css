@@ -382,7 +382,7 @@ body {
   color: gray;
 }
 
-.more{
+#more_button{
   display: flex;
   border-style: none;
   background-color:white;
@@ -393,7 +393,7 @@ body {
   padding-right: 10px;
 }
 
-.more:hover{
+#more_button:hover{
   background-color: whitesmoke;
   border-radius: 10px;
   cursor: pointer;
