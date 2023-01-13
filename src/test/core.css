@@ -469,7 +469,7 @@ body {
   color:gray;
 }
 
-.more p:hover{
+.more > p:hover{
   background-color: whitesmoke;
   border-radius: 50px;
   cursor: pointer;
@@ -478,9 +478,15 @@ body {
 #no_formatting{
   border:none;
   background-color: white;
+  font-size: medium;
 }
-/* 
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate */
+
+.hidemore{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: whitesmoke;
+}
 
 .ad{
   height: fit-content;
