@@ -29,13 +29,6 @@ export const Klicky = (dataSelector: string) => {
       console.log(evt.target.localName + " clicked", evt);
       displayClicksAndDate(evt);
       click_arr.push(evt.target.localName);
-
-      // let myEle = document.getElementById("button_click");
-      // if (myEle)
-      // {
-      //   //var elem = document.getElementById("elemId");
-      //   myEle.removeEventListener("click", this.addEventListener, false);
-      // }
     }
   });
 

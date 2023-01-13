@@ -1,7 +1,6 @@
-import { ButtonClick, Klicky, b_click } from "./klicky";
-window.b_click = b_click;
+import { ButtonClick, Klicky } from "./klicky";
 
 ButtonClick();
-Klicky();
+Klicky('data-tracking');
 
 
