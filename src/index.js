@@ -1,5 +1,6 @@
-import { Klicky } from "./klicky";
+import { ButtonClick, Klicky } from "./klicky";
 
+ButtonClick();
 Klicky('data-tracking');
 
 const news_button = document.querySelector("#more_button");

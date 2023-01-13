@@ -1,51 +1,53 @@
 body{
-  background-color: peachpuff;
-  overflow: hidden;
-}
-p{
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  text-shadow: 2px 1px 1px darkgoldenrod;
-  z-index: 1;
-  padding-top: 5%;
-  color: white;
-  text-align: center;
-} 
-.pika{
-  padding-top: 1%;
-  z-index: 3;
-  text-align: center;
-  animation-name:pika;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes pika{
-  0% {transform: translateX(100px);}
-  25% {transform: translateX(-100px);}
-  50% {transform: translateX(100px);}
-  75% {transform: translateX(-100px);}
-  100% {transform: translateX(100px);}
-}
+    background-color: peachpuff;
+    overflow: hidden;
+  }
+  p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px darkgoldenrod;
+    z-index: 1;
+    padding-top: 5%;
+    color: white;
+    text-align: center;
+  } 
+  .pika{
+    padding-top: 1%;
+    z-index: 3;
+    text-align: center;
+    animation-name:pika;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pika{
+    0% {transform: translateX(100px);}
+    25% {transform: translateX(-100px);}
+    50% {transform: translateX(100px);}
+    75% {transform: translateX(-100px);}
+    100% {transform: translateX(100px);}
+  }
+  
+  p {
+    color: blue;
+  }
+  
+  p {
+    color: green;
+    font-size: 12px;
+    margin: 0px;
+  }
+  
+  h3 {
+    color: blue;
+    margin-top: 20px;
+  }
+  
+  img {
+    width: 30%;
+  }
+  
+  #app {
+    text-align: center;
+  }
+  
 
-p {
-  color: blue;
-}
-
-p {
-  color: green;
-  font-size: 12px;
-  margin: 0px;
-}
-
-h3 {
-  color: blue;
-  margin-top: 20px;
-}
-
-img {
-  width: 30%;
-}
-
-#app {
-  text-align: center;
-}
