@@ -196,6 +196,11 @@ body {
   color: black;
 }
 
+.sidebar__recentItem > img{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .sidebar__hash {
   margin-right: 10px;
   margin-left: 10px;
