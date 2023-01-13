@@ -508,17 +508,9 @@ body {
   cursor: pointer;
 }
 
-#hashtag_button{
+#hashtag_button, #groups_button{
   border:none;
   background-color: white;
-  font-size: medium;
-}
-
-#groups_buttons{
-  border:none;
-  background-color: white;
-  font-size: medium;
-  margin-left:15px;
 }
 
 .ad{
@@ -630,6 +622,7 @@ a{
 }
 
 #button_click {
+  width: 205px;
   background-color: white;
   border: solid 1px lightgrey;
   margin-bottom: 10px;
@@ -649,7 +642,7 @@ a{
   display: none;
 }
 
-.hidden {
+#event_data {
   overflow-x: hidden;
   overflow-y:auto;
 }
@@ -663,7 +656,8 @@ a{
 #event_data {
   font-size: 14px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 li {
