@@ -489,15 +489,23 @@ a{
 }
 
 /* 'Button' */
-.event_button {
+.event_button, #button_click {
   color: black;
   padding: 10px;
   margin-top: 0px;
   width: 225px;
+  border-radius: 10px;  
 }
 
-.event_button:hover {
+#button_click {
+  background-color: white;
+  border: solid 1px lightgrey;
+  margin-bottom: 10px;
+}
+
+.event_button:hover, #button_click:hover {
   background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .event_view_text {
@@ -509,8 +517,13 @@ a{
   display: none;
 }
 
+.hidden {
+  overflow-y: auto;
+}
+
 #toggle:checked ~ .hidden {
   display: block;
+  max-height: 230px;
 }
 
 /* Event data */
@@ -532,3 +545,4 @@ li {
 #toggle:checked ~ label i {
   transform: rotate(45deg);
 }
+
