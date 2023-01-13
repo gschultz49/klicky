@@ -627,12 +627,13 @@ a{
 }
 
 .hidden {
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
 #toggle:checked ~ .hidden {
   display: block;
-  max-height: 230px;
+  max-height: 240px;
 }
 
 /* Event data */
