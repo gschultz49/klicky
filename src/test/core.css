@@ -243,6 +243,10 @@ body {
   justify-content: space-between;
 }
 
+#filtered-data {
+  margin-left: 10px;
+}
+
 .add > img{
   border-radius: 100px;
   cursor: pointer;
@@ -487,7 +491,7 @@ body {
   color: gray;
 }
 
-#more_button{
+.more_button{
   display: flex;
   border-style: none;
   background-color:white;
@@ -498,19 +502,19 @@ body {
   padding-right: 10px;
 }
 
-#more_button:hover{
+.more_button:hover{
   background-color: whitesmoke;
   border-radius: 10px;
   cursor: pointer;
 }
 
-#no_formatting{
+#hashtag_button{
   border:none;
   background-color: white;
   font-size: medium;
 }
 
-#fix{
+#groups_buttons{
   border:none;
   background-color: white;
   font-size: medium;
@@ -647,7 +651,7 @@ a{
 
 .hidden {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y:auto;
 }
 
 #toggle:checked ~ .hidden {
@@ -658,7 +662,6 @@ a{
 /* Event data */
 #event_data {
   font-size: 14px;
-  padding: 10px;
   text-align: left;
   margin-left: 10px;
 }
