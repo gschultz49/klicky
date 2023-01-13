@@ -481,13 +481,6 @@ body {
   font-size: medium;
 }
 
-.hidemore{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: whitesmoke;
-}
-
 .ad{
   height: fit-content;
   padding: 10px;
