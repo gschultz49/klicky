@@ -474,18 +474,12 @@ body {
   background-color:white;
   margin-left:20px;
   color:gray;
-<<<<<<< HEAD
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 #more_button:hover{
-=======
-}
-
-.more > p:hover{
->>>>>>> d9ac74c9299ba59803eecea3f9fa9c0eb608b5c4
   background-color: whitesmoke;
   border-radius: 10px;
   cursor: pointer;

@@ -15,3 +15,4 @@ news_button.addEventListener("click", () => {
         news_button.innerHTML = "Show more 🡣";
     }
 });
+
