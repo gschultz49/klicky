@@ -577,7 +577,9 @@
             <p>1h	ago • 3,396 readers</p>
           </div>
         </div>
+
         <button class="more" id="no_formatting">
+        <div class="more">
           <p> show more 🡣 </p>
         </div>
         
@@ -670,6 +672,7 @@
             <a href="https://mobile.linkedin.com"><p>Get the LinkedIn app</p></div></a>
             <div class="cols">
             <a href="https://www.linkedin.com/feed/"><p>More</p></div></a>
+            <!-- <script src="./src/index.js"></script> -->
           </div>
         </div>
       </div>
@@ -680,6 +683,7 @@
         <input type="checkbox" id="toggle">
         <label for="toggle" >
           <div class="event_button">
+          <div class="event_button" id="evt_button">
             <i style="color: black" class="material-icons">add</i>
             <div class="event_view_text">Event Viewer</div>
           </div>
@@ -691,6 +695,9 @@
             <li>"click" event occured at 11:04am</li>
             <li>"click" event occured at 11:03am</li>
             <li>"click" event occured at 11:02am</li>
+          <ul id="filtered_data">
+            <li>-------------Tracking Clicks------------- <span id = 'date-time'></span></li>
+            <br>
           </ul>
         </div>
       </div>

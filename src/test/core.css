@@ -568,6 +568,31 @@ a{
   width: 225px;
 }
 
+.reaction > p{
+  font-size:small;
+  cursor: pointer;
+}
+
+/* Event Viewer */
+.event_viewer {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  height: fit-content;
+  margin-left: 10px;
+}
+
+/* 'Button' */
+.event_button {
+  color: black;
+  padding: 10px;
+  margin-top: 0px;
+  width: 225px;
+}
+
 .event_button:hover {
   background-color: whitesmoke;
 }
@@ -604,3 +629,5 @@ li {
 #toggle:checked ~ label i {
   transform: rotate(45deg);
 }
+
+
