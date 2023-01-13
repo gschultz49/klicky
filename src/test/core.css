@@ -486,6 +486,13 @@ body {
   font-size: medium;
 }
 
+#fix{
+  border:none;
+  background-color: white;
+  font-size: medium;
+  margin-left:15px;
+}
+
 .ad{
   height: fit-content;
   padding: 10px;
