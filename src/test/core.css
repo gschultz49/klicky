@@ -129,26 +129,23 @@ body {
 
 .stat_top{
   padding:10px;
-  background-color: white;
-  border:solid 1px lightgray;
-  border-bottom: none;
 }
 
 .stat_mid{
   padding:10px;
-  background-color: white;
-  border-left:solid 1px lightgray;
-  border-right:solid 1px lightgray;
-  border-bottom: none;
 }
 
 .stat_bottom{
   padding:10px;
+}
+
+.sidebar__stats{
+  padding-top:10px;
   background-color: white;
-  border: solid 1px lightgray;
-  border-top: none;
+  border:solid 1px lightgray;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .stat_bottom:hover,.stat_mid:hover,.stat_top:hover{
@@ -237,20 +234,20 @@ body {
 }
 
 .event{
-  padding-top:2%;
-  padding-bottom: 2%;
+  padding-top:5%;
+  padding-bottom: 5%;
   display:flex;
   justify-content: space-between;
 }
 
-.add > img{
-  border-radius: 100px;
+.event:hover{
+  background-color:#f3f2ef;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform .2s ease-in-out;
 }
 
-.add > img:hover{
-  background-color: #f3f2ef;
+.event:hover > .add > img{
+  transition: transform .1s ease-in-out;
   transform:scale(120%);
 }
 
@@ -410,8 +407,13 @@ body {
   transform: rotate(90deg) scale(120%);
 }
 
-#why{
-  margin-left:14px;
+.follow{
+  transition: transform .2s ease-in-out;
+}
+
+.follow:hover{
+  transform: scale(120%);
+  cursor: pointer;
 }
 
 .post__info > p {
