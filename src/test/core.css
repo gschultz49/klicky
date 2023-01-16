@@ -129,26 +129,23 @@ body {
 
 .stat_top{
   padding:10px;
-  background-color: white;
-  border:solid 1px lightgray;
-  border-bottom: none;
 }
 
 .stat_mid{
   padding:10px;
-  background-color: white;
-  border-left:solid 1px lightgray;
-  border-right:solid 1px lightgray;
-  border-bottom: none;
 }
 
 .stat_bottom{
   padding:10px;
+}
+
+.sidebar__stats{
+  padding-top:10px;
   background-color: white;
-  border: solid 1px lightgray;
-  border-top: none;
+  border:solid 1px lightgray;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .stat_bottom:hover,.stat_mid:hover,.stat_top:hover{
@@ -230,6 +227,15 @@ body {
   padding-bottom: 10px;
 }
 
+.sidebar_below{
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-top: none;
+  background-color: white;
+}
+
 .groups, .add >p{
   font-size: 14px;
   font-family: 'Nirmala UI';
@@ -237,20 +243,24 @@ body {
 }
 
 .event{
-  padding-top:2%;
-  padding-bottom: 2%;
+  padding: 10px;
   display:flex;
   justify-content: space-between;
 }
 
-.add > img{
-  border-radius: 100px;
-  cursor: pointer;
-  transition: transform .2s ease-in-out;
+.event_below{
+  background-color: white;
+  border:solid 1px lightgray;
+  border-top:none;
 }
 
-.add > img:hover{
-  background-color: #f3f2ef;
+.event:hover{
+  background-color:#f3f2ef;
+  cursor: pointer;
+}
+
+.event:hover > .add > img{
+  transition: transform .1s ease-in-out;
   transform:scale(120%);
 }
 
@@ -410,8 +420,15 @@ body {
   transform: rotate(90deg) scale(120%);
 }
 
-#why{
-  margin-left:14px;
+.follow > img{
+  transition: transform .2s ease-in-out;
+}
+
+.follow > img:hover{  
+  transform: scale(120%);
+  cursor: pointer;
+  background-color:rgb(230,230,230);
+  border-radius: 200px;
 }
 
 .post__info > p {
