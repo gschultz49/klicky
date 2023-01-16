@@ -1,6 +1,6 @@
 export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
-}
+} 
 
 let click_arr = [];
 
@@ -41,6 +41,29 @@ export const Klicky = (dataSelector: string) => {
     console.log(event);
   })
 
+  //Mouse event coordinates and live time in the Event Viewer 
+  let screenLog = document.querySelector('#screen-log');
+document.addEventListener('mousemove', logKey);
+
+function logKey(e) {
+  screenLog.innerText = `
+    Mouse event occurring in these coordinates: ${e.clientX}, ${e.clientY}`;
+    console.log("You are hovering over the page");
+    let date = new Date();
+    dateTime(date);
+    console.log(e);
+    const datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
+}
+// outputs the keyboard events on the event viewer
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".`);
+
+
+
+
   function getEventType(event) {
     console.log(event);
   }
@@ -64,9 +87,16 @@ export const Klicky = (dataSelector: string) => {
     datetime.innerHTML = dateTime(dt);
     tag.appendChild(datetime);
 
+    // shows what html tag is clicked
     const para = document.createElement("li");
     para.innerText = evt.target.localName + " tag clicked!";
     tag.appendChild(para);
+
+    // shows the x and y coordinates of mouse click
+    const coord = document.createElement("li");
+    coord.innerText = "x: " + evt.pageX + " y: " + evt.pageY;
+    tag.appendChild(coord);
+
     const space = document.createElement("br");
     tag.appendChild(space);
   }
