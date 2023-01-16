@@ -60,7 +60,7 @@ click_arr.push(e);
 // outputs the keyboard events on the event viewer
 const textBox = document.querySelector("#textBox");
 const output = document.querySelector("#output");
-textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".${click_arr.push(event)}`);
+textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".${click_arr.push(event.key)}`);
 
 
 
