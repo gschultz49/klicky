@@ -40,22 +40,29 @@ export const Klicky = (dataSelector: string) => {
   button?.addEventListener("mousemove", (event) => {
     console.log(event);
   })
-// Pointer event
-document.addEventListener("click", function(event){
-  console.log(event);
-})
 
-function getEventType(event) {
-	console.log (event)
+  //Mouse event coordinates and live time in the Event Viewer 
+  let screenLog = document.querySelector('#screen-log');
+document.addEventListener('mousemove', logKey);
+
+function logKey(e) {
+  screenLog.innerText = `
+    Mouse event occurring in these coordinates: ${e.clientX}, ${e.clientY}`;
+    console.log("You are hovering over the page");
+    let date = new Date();
+    dateTime(date);
+    console.log(e);
+    var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
 }
-//keyboard event
-document.addEventListener('keydown', getEventType, false); 
+// outputs the keyboard events on the event viewer
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".`);
 
-// Mouse Event
-const button = document.querySelector("button")
-button.addEventListener("mousemove", event => {
-  console.log(event)
-})
+
+
 
   function getEventType(event) {
     console.log(event);
