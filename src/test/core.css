@@ -227,6 +227,15 @@ body {
   padding-bottom: 10px;
 }
 
+.sidebar_below{
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-top: none;
+  background-color: white;
+}
+
 .groups, .add >p{
   font-size: 14px;
   font-family: 'Nirmala UI';
@@ -234,15 +243,19 @@ body {
 }
 
 .event{
-  padding-top:5%;
-  padding-bottom: 5%;
+  padding: 10px;
   display:flex;
   justify-content: space-between;
 }
 
+.event_below{
+  background-color: white;
+  border:solid 1px lightgray;
+  border-top:none;
+}
+
 .event:hover{
   background-color:#f3f2ef;
-  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -407,16 +420,13 @@ body {
   transform: rotate(90deg) scale(120%);
 }
 
-.follow{
+.follow > img{
   transition: transform .2s ease-in-out;
 }
 
-.follow:hover{
+.follow > img:hover{  
   transform: scale(120%);
   cursor: pointer;
-}
-
-.follow > img:hover{
   background-color:rgb(230,230,230);
   border-radius: 200px;
 }
