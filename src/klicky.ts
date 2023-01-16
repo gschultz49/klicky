@@ -55,11 +55,12 @@ function logKey(e) {
     const datetime = new Date();
 console.log(datetime);
 document.getElementById("time").textContent = datetime;
+click_arr.push(e);
 }
 // outputs the keyboard events on the event viewer
 const textBox = document.querySelector("#textBox");
 const output = document.querySelector("#output");
-textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".`);
+textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".${click_arr.push(event)}`);
 
 
 
