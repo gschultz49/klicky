@@ -1,6 +1,6 @@
 export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
-}
+} 
 
 let click_arr = [];
 
@@ -87,9 +87,16 @@ textBox.addEventListener('keydown', (event) => output.textContent = `Key board e
     datetime.innerHTML = dateTime(dt);
     tag.appendChild(datetime);
 
+    // shows what html tag is clicked
     const para = document.createElement("li");
     para.innerText = evt.target.localName + " tag clicked!";
     tag.appendChild(para);
+
+    // shows the x and y coordinates of mouse click
+    const coord = document.createElement("li");
+    coord.innerText = "x: " + evt.pageX + " y: " + evt.pageY;
+    tag.appendChild(coord);
+
     const space = document.createElement("br");
     tag.appendChild(space);
   }
