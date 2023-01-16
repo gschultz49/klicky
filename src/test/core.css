@@ -243,6 +243,10 @@ body {
 }
 
 .event{
+  font-weight: bold;
+}
+
+.event{
   padding: 10px;
   display:flex;
   justify-content: space-between;
