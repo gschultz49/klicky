@@ -532,9 +532,13 @@ body {
   cursor: pointer;
 }
 
-#hashtag_button, #groups_button{
+#hashtag_button{
   border:none;
   background-color: white;
+}
+
+#groups_button{
+  padding-left:25px;
 }
 
 .ad{
