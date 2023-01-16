@@ -246,6 +246,7 @@ body {
   padding: 10px;
   display:flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 #filtered-data {
