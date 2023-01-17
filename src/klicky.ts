@@ -1,3 +1,23 @@
+/**
+ * Throttles a callback over a specified interval
+ * Use this for the mousemove to avoid having it spam the page
+ *
+ * @param {Function} callback a callback function to be executed after a `interval` delay
+ * @param {Number} interval the time delay in milliseconds for the function to be executed
+ * @return {void}
+ */
+function throttle(callback: Function, interval = 2000) {
+  let enableCall = true;
+
+  return function (...args: any) {
+    if (!enableCall) return;
+
+    enableCall = false;
+    callback.apply(this, args);
+    setTimeout(() => (enableCall = true), interval);
+  };
+}
+
 export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
 } 
@@ -7,7 +27,7 @@ let click_arr = [];
 export const Klicky = (dataSelector: string) => {
   // let click_arr = [];
   document.getElementById("button_click").addEventListener("click", function (evt) {
-    console.log("All events : " + click_arr);
+    console.log("All events:", click_arr);
   });
 
   document.addEventListener("click", function (evt) {
@@ -37,13 +57,15 @@ export const Klicky = (dataSelector: string) => {
 
   // Mouse Event
   const button = document.querySelector("button");
-  button?.addEventListener("mousemove", (event) => {
-    console.log(event);
-  })
+  button?.addEventListener("mousemove", (event) =>
+    throttle(() => {
+      console.log(event);
+    })
+  );
 
   //Mouse event coordinates and live time in the Event Viewer 
-  let screenLog = document.querySelector('#screen-log');
-document.addEventListener('mousemove', logKey);
+  let screenLog = document.querySelector("#screen-log");
+  document.addEventListener("mousemove", throttle(logKey));
 
 function logKey(e) {
   screenLog.innerText = `
@@ -130,4 +152,3 @@ textBox.addEventListener('keydown', (event) => output.textContent = `Key board e
     return msg;
   }
 };
-
