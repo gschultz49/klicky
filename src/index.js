@@ -1,7 +1,14 @@
-import { ButtonClick, Klicky } from "./klicky";
+import { ButtonClick, Klicky, getclick } from "./klicky";
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
+
 
 ButtonClick();
 Klicky('data-tracking');
+
 
 const news_button = document.querySelector("#news_button");
 const news = document.querySelector("#moreNewsSection");
@@ -44,9 +51,6 @@ hash_button.addEventListener("click", () => {
 
 /* Database */
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -65,3 +69,21 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+const firestore = getFirestore();
+
+const click_events = doc(firestore, 'events/anything');
+export function userData(){
+  const docData = {
+    all_events: getclick()
+  };
+  setDoc(click_events, docData, {merge: true})
+    .then(() => {
+        console.log('This value has been written to the database');
+    })
+    .catch((error) => {
+        console.log(`I got an error! ${error}`);
+    });
+}
+
+userData();

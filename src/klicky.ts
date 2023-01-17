@@ -1,13 +1,20 @@
+// import { getFirestore, doc, setDoc } from "firebase/firestore";
+
 export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
 } 
-
+  
 let click_arr = [];
 
+export const getclick = () => {
+  return click_arr;
+}
+
 export const Klicky = (dataSelector: string) => {
-  // let click_arr = [];
+
   document.getElementById("button_click").addEventListener("click", function (evt) {
     console.log("All events : " + click_arr);
+    // userData();
   });
 
   document.addEventListener("click", function (evt) {
