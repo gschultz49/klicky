@@ -125,13 +125,10 @@
                 <img src="assets/icons/noun-people-2263095.svg" width="20">
                 <p>Software Engineer Team</p>
               </div>
-              <button class="more" id="fix">
-                <p> Show more 🡣 </p>
-              </button>
-              
+
               <!-- Groups Hidden Content -->
-            <div class="hidemore">
-              <div class="sidebar__recentItem">
+              <div id="hide_groups" style="display: none;">
+                <div class="sidebar__recentItem">
                 <img src="assets/icons/noun-people-2263095.svg" width="20">
                 <p>Ping Pong Tournaments</p>
               </div>
@@ -144,21 +141,23 @@
                 <p>LinkedIn's Pet Tier List</p>
               </div>
             </div>
+            <button class="more_button" id="groups_button">Show more 🡣</button>
           </div>
-          </div>
-          
+        </div>
+
           <div class="event_below">
             <div class="event">
               <div class="add">
                 <p>Events</p>
               </div>
               <div class="add">
-                <img src="./assets/20340289291547546467-128.png" width="20">
+                <img src="./assets/20340289291547546467-128.png" width="15">
               </div>
             </div>
           </div>
+        
             
-            <div class="sidebar_below">
+          <div class="sidebar_below">
             <div class="groups">
               <p>Followed Hashtags</p>
               <div class="sidebar__recentItem">
@@ -173,12 +172,9 @@
                 <span class="sidebar__hash">#</span>
                 <p>Chat gpt</p>
               </div>
-              <button class="more" id="no_formatting">
-                <p>Show more 🡣</p> 
-              </button>
-            
+
             <!-- Followed Hashtags Hidden Content -->
-            <div class="hidemore">
+            <div id="hide_hash" style="display: none;">
               <div class="sidebar__recentItem">
                 <span class="sidebar__hash">#</span>
                 <p>Empire State Building</p>
@@ -192,8 +188,10 @@
                 <p>LinkedIn Stickers</p>
               </div>
             </div>
+            <button class="more_button" id="hashtag_button">Show more 🡣</button>
           </div>
         </div>
+        
           
           <div class="discover">
             <p>Discover more</p>
@@ -339,7 +337,6 @@
             </div>
           </div>
         </div>
-
           <div class="post__body">
             <p>💞💞💞 -Chiffion the Maltipoo </p>
             <img src="./assets/PSX_20201129_200241-scaled-600x800.jpg" width="500">
@@ -348,7 +345,6 @@
             </div>
           </div>
           
-
           <div class="feed__inputOptions">
             <div class="inputOption">
               <i data-tracking style="color: gray" class="material-icons"> thumb_up </i>
@@ -423,7 +419,7 @@
               </div>
               <div class="post__header">
               <div class="material-icons">
-                <img src="./assets/20340289291547546467-128.png" width="30">
+                <img src="./assets/20340289291547546467-128.png" width="20">
               </div>
             </div>
           </div>
@@ -465,7 +461,7 @@
             </div>
             <div class="post__header">
             <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
+              <img src="./assets/20340289291547546467-128.png" width="20">
             </div>
           </div>
         </div>
@@ -507,7 +503,7 @@
             </div>
             <div class="post__header">
             <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
+              <img src="./assets/20340289291547546467-128.png" width="20">
             </div>
           </div>
         </div>
@@ -550,7 +546,7 @@
             </div>
             <div class="post__header">
             <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
+              <img src="./assets/20340289291547546467-128.png" width="20">
             </div>
           </div>
         </div>
@@ -593,7 +589,7 @@
             </div>
           <div class="post__header">
             <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
+              <img src="./assets/20340289291547546467-128.png" width="20">
             </div>
           </div>
         </div>
@@ -637,7 +633,7 @@
           </div>
           <div class="post__header">
             <div class="material-icons">
-              <img src="./assets/20340289291547546467-128.png" width="30">
+              <img src="./assets/20340289291547546467-128.png" width="20">
             </div>
           </div>
         </div>
@@ -727,13 +723,9 @@
           </div>
         </div>
 
-        <button class="more" id="no_formatting">
-          <p> show more 🡣 </p>
-        </button>
-        </div>
-        
-        <div class="hidemore">
-          <div class="widgets__article" >
+        <!-- Specific for showing more (hidden) news -->
+        <div id="moreNewsSection" style="display: none;">
+          <div class="widgets__article">
             <div class="widgets__articleLeft">
               <i class="material-icons"> fiber_manual_record </i>
             </div>
@@ -763,13 +755,14 @@
             </div>
           </div>
 
-          <div class="widgets__article" >
+          <div class="widgets__article">
             <div class="widgets__articleLeft">
               <i class="material-icons"> fiber_manual_record </i>
             </div>
             <div class="widgets__articleRight">
               <h4>Inflation cooled again in Decemeber</h4>
               <p>3h	ago • 4,623 readers</p>
+            </div>
             </div>
           </div>
 
@@ -782,8 +775,8 @@
               <p>4h	ago • 3,523 readers</p>
             </div>
           </div>
+          <button class="more_button" id="news_button">Show more 🡣</button>
         </div>
-
         <div class="addown">
           <div class="ad">
             <div class="row">
@@ -831,18 +824,18 @@
       <div class="event_viewer">
         <input type="checkbox" id="toggle">
         <label for="toggle" >
-          <div class="event_button">
           <div class="event_button" id="evt_button">
             <i style="color: black" class="material-icons">add</i>
             <div class="event_view_text">Event Viewer</div>
           </div>
         </label>
         <div class="hidden" id="event_data">
+          <button type = "button" id = "button_click">Log events in console</button>
           <ul id="filtered_data">
-            <li>-------------Tracking Clicks------------- <span id = 'date-time'></span></li>
+            <li style="margin-left: 0px">------------Tracking Clicks------------<span id = 'date-time'></span></li>
             <br>
           </ul>
-          <li>----------Console events-----------</li> 
+          <li>------------Console events-------------</li> 
           <p id="screen-log"></p>
           <input id="textBox" type="text">
           <div id="output"></div>
