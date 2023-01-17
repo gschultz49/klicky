@@ -246,6 +246,7 @@ body {
   padding: 10px;
   display:flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 #filtered-data {
@@ -531,9 +532,13 @@ body {
   cursor: pointer;
 }
 
-#hashtag_button, #groups_button{
+#hashtag_button{
   border:none;
   background-color: white;
+}
+
+#groups_button{
+  padding-left:25px;
 }
 
 .ad{
