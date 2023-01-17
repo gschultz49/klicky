@@ -1,11 +1,43 @@
 <html>
     <head>
         <title>Heat Map</title>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-heatmap.min.js"></script>
     </head>
     <body>
         <div id = "container"></div>
+        <script>
+            anychart.onDocumentReady(function () {
+
+                // create data
+                var data = [
+                {x: "Column 1", y: "A", heat: 10},
+                {x: "Column 2", y: "A", heat: 30},
+                {x: "Column 3", y: "A", heat: 21},
+                {x: "Column 4", y: "A", heat: 50},
+                {x: "Column 1", y: "B", heat: 10},
+                {x: "Column 2", y: "B", heat: 35},
+                {x: "Column 3", y: "B", heat: 32},
+                {x: "Column 4", y: "B", heat: 15},
+                {x: "Column 1", y: "C", heat: 10},
+                {x: "Column 2", y: "C", heat: 45},
+                {x: "Column 3", y: "C", heat: 47},
+                {x: "Column 4", y: "C", heat: 15},
+                ];
+
+                // create a chart and set the data
+                var chart = anychart.heatMap(data);
+
+                // set the chart title
+                chart.title("Heat Map: Basic Sample");
+
+                // set the container id
+                chart.container("container");
+
+                // initiate drawing the chart
+                chart.draw();
+                });
+        </script>
         <script src="./src/index.js"></script>
-        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-heatmap.min.js"></script>
     </body>
 </html>
