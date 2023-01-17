@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Heat Map</title>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-heatmap.min.js"></script>
+    </head>
+    <body>
+        <div id = "container"></div>
+        <script>
+            anychart.onDocumentReady(function () {
+
+                // create data
+                var data = [
+                {x: "Column 1", y: "A", fill: "#ffcc00"},
+                {x: "Column 2", y: "A", fill: "#ff9933"},
+                {x: "Column 3", y: "A", fill: "#ff9933"},
+                {x: "Column 4", y: "A", fill: "#FF0000"},
+                {x: "Column 1", y: "B", fill: "#ffcc00"},
+                {x: "Column 2", y: "B", fill: "#ffcc00"},
+                {x: "Column 3", y: "B", fill: "#ffcc00"},
+                {x: "Column 4", y: "B", fill: "#ffcc00"},
+                {x: "Column 1", y: "C", fill: "#ffcc00"},
+                {x: "Column 2", y: "C", fill: "#ffcc00"},
+                {x: "Column 3", y: "C", fill: "#ffcc00"},
+                {x: "Column 4", y: "C",
+                normal: {
+                    fill: "#ff0000",
+                    stroke: "4 #b30059"
+                },
+                
+                hovered: {
+                    fill: "#ff0000",
+                    stroke: "5 white"
+                },
+
+                selected: {
+                    fill: "#b30059",
+                    stroke: "5 white"
+                }
+            }
+            ];
+
+                // create a chart and set the data
+                var chart = anychart.heatMap(data);
+
+                // set the chart title
+                chart.title("Heat Map: Basic Sample");
+
+                // set the container id
+                chart.container("container");
+
+                // initiate drawing the chart
+                chart.draw();
+                });
+        </script>
+        <script src="./src/index.js"></script>
+    </body>
+</html>
