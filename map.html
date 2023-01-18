@@ -8,42 +8,24 @@
 
 <body>
     <div id="container"></div>
-    <button id="change_color">Change color of heat map</button>
-    <button id="change_theme">Change theme</button>
     <script>
         anychart.onDocumentReady(function () {
 
             // create data
             var data = [
-                { x: "Column 1", y: "A", fill: "#FFCC00" },
-                { x: "Column 2", y: "A", fill: "#FFCC00" },
-                { x: "Column 3", y: "A", fill: "#FF9933" },
-                { x: "Column 4", y: "A", fill: "#FF0000" },
-                { x: "Column 1", y: "B", fill: "#FFCC00" },
-                { x: "Column 2", y: "B", fill: "#FF9933" },
-                { x: "Column 3", y: "B", fill: "#FF6600" },
-                { x: "Column 4", y: "B", fill: "#FF6600" },
-                { x: "Column 1", y: "C", fill: "#FF9933" },
-                { x: "Column 2", y: "C", fill: "#FF9933" },
-                { x: "Column 3", y: "C", fill: "#FF6600" },
-                { x: "Column 4", y: "C", fill: "FF0000",
-                    normal: {
-                        fill: "#ff0000",
-                        stroke: "white"
-                    },
-
-                    hovered: {
-                        fill: "#ff0000",
-                        stroke: "5 white"
-                    },
-
-                    selected: {
-                        fill: "#5a5a5a",
-                        stroke: "5 white"
-                    }
-                }
-            ];
-
+                { x: "Column 1", y: "A", heat: 20 },
+                { x: "Column 2", y: "A", heat: 17 },
+                { x: "Column 3", y: "A", heat: 21 },
+                { x: "Column 4", y: "A", heat: 34 },
+                { x: "Column 1", y: "B", heat: 33 },
+                { x: "Column 2", y: "B", heat: 32 },
+                { x: "Column 3", y: "B", heat: 51 },
+                { x: "Column 4", y: "B", heat: 50 },
+                { x: "Column 1", y: "C", heat: 47 },
+                { x: "Column 2", y: "C", heat: 34 },
+                { x: "Column 3", y: "C", heat: 65 },
+                { x: "Column 4", y: "C", heat: 12 }
+                ];
             // create a chart and set the data
             var chart = anychart.heatMap(data);
 
