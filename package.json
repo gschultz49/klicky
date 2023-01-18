@@ -24,5 +24,8 @@
         "staticOutDir": "assets/"
       }
     ]
+  },
+  "dependencies": {
+    "@syncfusion/ej2-heatmap": "^20.4.42"
   }
 }
