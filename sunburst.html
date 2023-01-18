@@ -12,51 +12,70 @@
         // create data
         anychart.onDocumentReady(function () {
             var data = [
-                {name: "LinkedIn", children: [
-                        {name: "LinkedIn News", children: [
+                {
+                    name: "LinkedIn", children: [
+                        {
+                            name: "LinkedIn News", children: [
                                 { name: "Us payrolls jump at end of '22", value: 5 },
-                                { name: "Is Florida actually a good deal?", value: 5  },
-                                { name: "Remote work may be past its prime" , value: 5 },
-                                { name: "Companies are pivoting for pets" , value: 5 }
-                            ]},
-                        {name: "Profiles", children: [
-                                { name: "Ryan Roslanksy", value: 5},
+                                { name: "Is Florida actually a good deal?", value: 5 },
+                                { name: "Remote work may be past its prime", value: 5 },
+                                { name: "Companies are pivoting for pets", value: 5 }
+                            ]
+                        },
+                        {
+                            name: "Profiles", children: [
+                                { name: "Ryan Roslanksy", value: 5 },
                                 { name: "Judy K.", value: 5 },
                                 { name: "Sanjida", value: 5 },
                                 { name: "Judy Z.", value: 5 },
                                 { name: "Madison", value: 5 },
-                                { name: "Tiffanie", value: 5}
-                            ]},
-                        {name: "Hashtags", children: [
+                                { name: "Tiffanie", value: 5 }
+                            ]
+                        },
+                        {
+                            name: "Hashtags", children: [
                                 { name: "#Chiffon the Maltipoo", value: 5 },
                                 { name: "#Code Calendar", value: 5 },
-                                { name: "#ChatGPT", value: 5},
-                                { name: "#Empire State Building", value: 5},
-                                { name: "#Chiffon’s Closet", value: 5},
-                                { name: "#LinkedIn Stickers", value: 5}
-                            ]},
+                                { name: "#ChatGPT", value: 5 },
+                                { name: "#Empire State Building", value: 5 },
+                                { name: "#Chiffon’s Closet", value: 5 },
+                                { name: "#LinkedIn Stickers", value: 5 }
+                            ]
+                        },
 
-                        {name: "Team", children: [
-                            { name: "HTML/ CSS Team", value: 5},
-                            { name: "JavaScript Team", value: 5},
-                            { name: "Software Engineer Team", value: 5}
-                        ]},
+                        {
+                            name: "Team", children: [
+                                { name: "HTML/ CSS Team", value: 5 },
+                                { name: "JavaScript Team", value: 5 },
+                                { name: "Software Engineer Team", value: 5 }
+                            ]
+                        },
 
-                        {name: "Popular Ad", children: [
-                                { name: "Dog Ad", value: 5}
-                        ]}
-                    ]}
-        ];
-        // create a chart and set the data
-        var chart = anychart.sunburst(data, "as-tree");
-        chart.calculationMode("parent-independent");
+                        {
+                            name: "Popular Ad", children: [
+                                { name: "Dog Ad", value: 5 }
+                            ]
+                        }
+                    ]
+                }
+            ];
+            // create a chart and set the data
+            var chart = anychart.sunburst(data, "as-tree");
+            chart.calculationMode("parent-independent");
 
-        // set the container id
-        chart.container("container");
+            // set the container id
+            chart.container("container");
 
-        // initiate drawing the chart
-        chart.draw();
+            // initiate drawing the chart
+            chart.draw();
         });
+
+        //Background Color is being changed every 1 seconds
+        setInterval(
+            function () {
+                var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                document.body.style.backgroundColor = "#" + randomColor;
+            }, 1000);
     </script>
     <script src="./src/index.js"></script>
 </body>
