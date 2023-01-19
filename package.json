@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
-    "@syncfusion/ej2-heatmap": "^20.4.42"
+    "@syncfusion/ej2-heatmap": "^20.4.42",
+    "firebase": "^9.16.0"
   }
 }
