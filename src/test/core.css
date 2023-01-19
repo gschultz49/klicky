@@ -685,12 +685,24 @@ a{
   max-height: 240px;
 }
 
+.text{
+  text-align: center;
+}
+
+.cool_buttons{
+  text-align: center;
+}
+
+.space{
+  margin-top:15px;
+}
+
 /* Event data */
 #event_data {
   font-size: 14px;
   text-align: left;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  /* margin-left: 20px;
+  margin-bottom: 10px; */
 }
 
 li {
