@@ -1,20 +1,75 @@
 // import { getFirestore, doc, setDoc } from "firebase/firestore";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
+
+/* Database */
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCLcorYXXxmSJjn7qDMPK_5m-DiD77m8nk",
+  authDomain: "click-tracking-data.firebaseapp.com",
+  projectId: "click-tracking-data",
+  storageBucket: "click-tracking-data.appspot.com",
+  messagingSenderId: "940131090453",
+  appId: "1:940131090453:web:1294d87473411f56170e1c",
+  measurementId: "G-S07EHVYYHZ"
+};
+
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const firestore = getFirestore();
+
+const click_events = doc(firestore, 'events/tracking');
+export function userData(){
+  // const simplified_arr = click_arr.map(item =>  ({ type: item?.type || "no value" , name: "mouseobject"}))
+  const simplified_arr = click_arr.map(item => { 
+    if(item instanceof window.KeyboardEvent){
+      return {name: "Keyboard", type: item?.type, keyPressed: item?.key}
+      
+    }
+    else if(item instanceof window.PointerEvent){
+      return {name: "Pointer", type: item?.type, tag: item?.target.localName, x_coord: item?.pageX, y_coord: item?.pageY}
+    }
+    else if(item instanceof window.MouseEvent){
+      return {name: "Mouse", type: item?.type}
+    }
+    else{
+      return {name: "None", type: item?.type}
+    }
+  })
+
+    const docData = {
+    all_events: simplified_arr
+  };
+  setDoc(click_events, docData, {merge: true})
+    .then(() => {
+        console.log('This value has been written to the database');
+    })
+    .catch((error) => {
+        console.log(`I got an error! ${error}`);
+    });
+}
+
 export const ButtonClick = () => {
   document.getElementById("evt_button")?.click();
 } 
   
 let click_arr = [];
 
-export const getclick = () => {
-  return click_arr;
-}
-
 export const Klicky = (dataSelector: string) => {
 
   document.getElementById("button_click").addEventListener("click", function (evt) {
     console.log("All events : " + click_arr);
-    // userData();
+    userData();
   });
 
   document.addEventListener("click", function (evt) {
@@ -27,7 +82,7 @@ export const Klicky = (dataSelector: string) => {
         console.log("SELECTOR MODE");
         console.log(dataSelector + " tag clicked", evt);
         displayClicksAndDate(evt);
-        click_arr.push(evt.target.localName);
+        click_arr.push(evt);
       }
 
     } else {    // all mode
@@ -35,7 +90,7 @@ export const Klicky = (dataSelector: string) => {
       // @ts-ignore
       console.log(evt.target.localName + " clicked", evt);
       displayClicksAndDate(evt);
-      click_arr.push(evt.target.localName);
+      click_arr.push(evt);
     }
   });
 
@@ -67,7 +122,7 @@ click_arr.push(e);
 // outputs the keyboard events on the event viewer
 const textBox = document.querySelector("#textBox");
 const output = document.querySelector("#output");
-textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".${click_arr.push(event.key)}`);
+textBox.addEventListener('keydown', (event) => output.textContent = `Key board event occurred: You pressed "${event.key}".${click_arr.push(event)}`);
 
 
 

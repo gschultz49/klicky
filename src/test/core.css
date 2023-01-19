@@ -537,6 +537,11 @@ body {
   background-color: white;
 }
 
+#hashtag_button:hover{
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
 #groups_button{
   padding-left:25px;
 }
