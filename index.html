@@ -149,7 +149,7 @@
                 <p>Events</p>
               </div>
               <div class="add">
-                <img src="./assets/20340289291547546467-128.png" width="15">
+                <img src="./assets/20340289291547546467-128.png" width="20">
               </div>
             </div>
           </div>
@@ -828,18 +828,36 @@
           </div>
         </label>
         <div class="hidden" id="event_data">
-          <ul id="filtered_data">
-            <li style="margin-left: 0px">------------Tracking Clicks------------<span id = 'date-time'></span></li>
+          <div class="cool_buttons">
+            <button type = "button" id = "button_click">Log events in console</button>
+          </div>
+          <div class="tracking">
+            <ul id="filtered_data">
+          <div class="underline">
+            <li style="margin-left: 0px">Tracking Clicks<span id = 'date-time'></span></li>
+          </div>
             <br>
           </ul>
+<<<<<<< HEAD
           <li>-------------Console events--------------</li> 
+=======
+        </div>
+          <div class="underline">
+            <li>Console events</li> 
+          </div>
+>>>>>>> 7c8d4812db334721fd0d1b7cfc6f1849bfe9f5b1
           <p id="screen-log"></p>
-          <input id="textBox" type="text">
+            <div class="text">
+              <input id="textBox" type="text">
+            </div>
           <div id="output"></div>
           <p id="time"></p>
-          <button type = "button" id = "button_click">Log events in console</button>
-          <a href = "map.html"><button>View Rectangular Heat Map</button></a>
-          <a href = "sunburst.html"><button>View Sunburst Chart</button></a>
+          <div class="space">
+            <div class="cool_buttons">
+              <a href = "map.html"><button type = "button" id = "button_click">View Rectangular Heat Map</button></a>
+              <a href = "sunburst.html"><button type = "button" id = "button_click">View Sunburst Chart</button></a>
+          </div>
+        </div>
         </div>
       </div>
     </div>
