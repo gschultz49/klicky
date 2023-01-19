@@ -1,7 +1,9 @@
 import { ButtonClick, Klicky } from "./klicky";
 
+
 ButtonClick();
 Klicky('data-tracking');
+
 
 const news_button = document.querySelector("#news_button");
 const news = document.querySelector("#moreNewsSection");
@@ -41,3 +43,4 @@ hash_button.addEventListener("click", () => {
         hash_button.innerHTML = "Show more 🡣";
     }
 });
+
