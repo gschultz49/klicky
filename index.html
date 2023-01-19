@@ -828,11 +828,20 @@
           </div>
         </label>
         <div class="hidden" id="event_data">
-          <ul id="filtered_data">
-            <li style="margin-left: 0px">------------Tracking Clicks------------<span id = 'date-time'></span></li>
+          <div class="cool_buttons">
+            <button type = "button" id = "button_click">Log events in console</button>
+          </div>
+          <div class="tracking">
+            <ul id="filtered_data">
+          <div class="underline">
+            <li style="margin-left: 0px">Tracking Clicks<span id = 'date-time'></span></li>
+          </div>
             <br>
           </ul>
-          <li>------------Console events-------------</li> 
+        </div>
+          <div class="underline">
+            <li>Console events</li> 
+          </div>
           <p id="screen-log"></p>
             <div class="text">
               <input id="textBox" type="text">
@@ -841,7 +850,6 @@
           <p id="time"></p>
           <div class="space">
             <div class="cool_buttons">
-              <button type = "button" id = "button_click">Log events in console</button>
               <a href = "map.html"><button type = "button" id = "button_click">View Rectangular Heat Map</button></a>
               <a href = "sunburst.html"><button type = "button" id = "button_click">View Sunburst Chart</button></a>
           </div>

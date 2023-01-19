@@ -249,10 +249,6 @@ body {
   font-weight: bold;
 }
 
-#filtered-data {
-  margin-left: 10px;
-}
-
 .add > img{
   border-radius: 100px;
   cursor: pointer;
@@ -360,7 +356,7 @@ body {
   justify-content: space-evenly;
 }
 
-.inputOption, .event_button {
+.inputOption {
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -622,10 +618,12 @@ a{
 
 /* 'Button' */
 .event_button {
+  display: flex;
   color: black;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 0px;
-  width: 225px;
+  width: 100%;
 }
 
 .reaction > p{
@@ -646,11 +644,11 @@ a{
 }
 
 /* 'Button' */
-.event_button, #button_click {
+#button_click {
   color: black;
   padding: 10px;
   margin-top: 0px;
-  width: 225px;
+  width: 100%;
   border-radius: 10px;  
 }
 
@@ -662,9 +660,11 @@ a{
 }
 
 .event_button:hover, #button_click:hover {
+  border-radius: 10px;
   background-color: whitesmoke;
   cursor: pointer;
 }
+
 
 .event_view_text {
   margin-left: 10px;
@@ -695,14 +695,24 @@ a{
 
 .space{
   margin-top:15px;
+  margin-bottom:10px;
 }
 
 /* Event data */
+
+.tracking, #time, #screen-log{
+  text-align: center;
+}
+
+.underline{
+  text-align: center;
+  border-bottom: solid 1px gray;
+  padding:5px;
+}
+
 #event_data {
   font-size: 14px;
   text-align: left;
-  /* margin-left: 20px;
-  margin-bottom: 10px; */
 }
 
 li {
