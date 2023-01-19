@@ -214,10 +214,3 @@ textBox.addEventListener('keydown', (event) => output.textContent = `Key board e
     return msg;
   }
 };
-
-//Background Color is being changed every 1 seconds
-setInterval(
-  function () {
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = "#"+randomColor;
-  },1000);
