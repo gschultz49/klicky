@@ -42,7 +42,11 @@ export function userData() {
         y_coord: item?.pageY,
       };
     } else if (item instanceof window.MouseEvent) {
-      return { name: "Mouse", type: item?.type };
+      return { name: "Mouse", 
+      type: item?.type,
+      x_coord: item?.pageX,
+      y_coord: item?.pageY
+     };
     } else {
       return { name: "None", type: item?.type };
     }
