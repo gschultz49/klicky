@@ -137,7 +137,7 @@ export const Klicky = (dataSelector: string) => {
 
   function logKey(e) {
     screenLog.innerText = `
-    Mouse event occurring in these coordinates: ${e.clientX}, ${e.clientY}`;
+    Mouse event occurring in these coordinates: ${e.pageX}, ${e.pageY}`;
     console.log("You are hovering over the page");
     let date = new Date();
     dateTime(date);
