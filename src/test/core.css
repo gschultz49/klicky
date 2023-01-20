@@ -604,18 +604,6 @@ a{
   all:inherit;
 }
 
-/* Event Viewer */
-.event_viewer {
-  position: sticky;
-  top: 80px;
-  flex: 0.2;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid lightgray;
-  height: fit-content;
-  margin-left: 10px;
-}
-
 /* 'Button' */
 .event_button {
   display: flex;
@@ -637,6 +625,7 @@ a{
   top: 80px;
   flex: 0.2;
   padding-left: 10px;
+  padding-right: 10px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid lightgray;
@@ -683,7 +672,7 @@ a{
 
 #toggle:checked ~ .hidden {
   display: block;
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .text{
