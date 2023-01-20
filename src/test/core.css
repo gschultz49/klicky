@@ -636,6 +636,7 @@ a{
   position: sticky;
   top: 80px;
   flex: 0.2;
+  padding-left: 10px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid lightgray;
@@ -700,14 +701,26 @@ a{
 
 /* Event data */
 
-.tracking, #time, #screen-log{
+.tracked_data, #time, #screen-log{
   text-align: center;
+}
+
+#tracking_underline{
+  border-bottom: solid 1px gray;
+}
+
+#tracking_underline > p{
+  padding-bottom: 5px;
 }
 
 .underline{
   text-align: center;
-  border-bottom: solid 1px gray;
+  border-top: solid 1px gray;
   padding:5px;
+}
+
+.underline >li{
+  padding-top:5px;
 }
 
 #event_data {
