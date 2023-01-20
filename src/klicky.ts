@@ -42,7 +42,11 @@ export function userData() {
         y_coord: item?.pageY,
       };
     } else if (item instanceof window.MouseEvent) {
-      return { name: "Mouse", type: item?.type };
+      return { name: "Mouse", 
+      type: item?.type,
+      x_coord: item?.pageX,
+      y_coord: item?.pageY
+     };
     } else {
       return { name: "None", type: item?.type };
     }
@@ -133,7 +137,7 @@ export const Klicky = (dataSelector: string) => {
 
   function logKey(e) {
     screenLog.innerText = `
-    Mouse event occurring in these coordinates: ${e.clientX}, ${e.clientY}`;
+    Mouse event occurring in these coordinates: ${e.pageX}, ${e.pageY}`;
     console.log("You are hovering over the page");
     let date = new Date();
     dateTime(date);
