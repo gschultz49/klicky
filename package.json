@@ -24,5 +24,8 @@
         "staticOutDir": "assets/"
       }
     ]
+  },
+  "dependencies": {
+    "firebase": "^9.16.0"
   }
 }
