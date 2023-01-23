@@ -11,7 +11,7 @@
       anychart.onDocumentReady(function () {
         // create data
         let data = [
-          { x: "Left Sidebar", y: "1", heat: 20 },
+          { x: "Left Sidebar", y: "1", heat: 20},
           { x: "LinkedIn Feed (Left)", y: "1", heat: 17 },
           { x: "LinkedIn Feed (Right)", y: "1", heat: 21 },
           { x: "Right Sidebar", y: "1", heat: 34 },
@@ -29,14 +29,16 @@
 
         // set the chart title
         chart.title(
-          "This heat map shows which parts of the page have been interacted/clicked on most"
+"This heat map shows which parts of the page have been clicked on most (The numbers represent the # of clicks)"
         );
+
 
         // set the container id
         chart.container("container");
 
         // initiate drawing the chart
         chart.draw();
+
       });
     </script>
     <script src="./src/index.js"></script>
